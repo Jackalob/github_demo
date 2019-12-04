@@ -26,11 +26,20 @@ body{
 }
 //component
 .repo{
+  @extend %clearfix;
+  padding: 24px 0;
+  &-wrap{
+    float:left;
+  }
   &-title{
     font-size: 20px;
     color: #0366D6;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   &-time{
+    float: right;
     font-size: 14px;
     color: #5F666F;
   }

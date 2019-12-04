@@ -1,8 +1,8 @@
 Vue.component("searchComponent", {
   template: `
     <div class='repo'>
-      <div>
-        <div class='repo-title'>{{repoData.name}}</div>
+      <div class='repo-wrap'>
+        <a target='_blank' class='repo-title' :href='repoData.html_url'>{{repoData.name}}</a>
         <div class='repo-description'>{{repoData.description}}</div>
       </div>
       <div class='repo-time'>Updated {{update}}</div>

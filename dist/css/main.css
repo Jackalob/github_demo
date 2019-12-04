@@ -345,6 +345,13 @@ img {
   display: block;
 }
 
+.repo::after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -860,12 +867,25 @@ body {
           align-items: center;
 }
 
+.repo {
+  padding: 24px 0;
+}
+
+.repo-wrap {
+  float: left;
+}
+
 .repo-title {
   font-size: 20px;
   color: #0366D6;
 }
 
+.repo-title:hover {
+  text-decoration: underline;
+}
+
 .repo-time {
+  float: right;
   font-size: 14px;
   color: #5F666F;
 }
