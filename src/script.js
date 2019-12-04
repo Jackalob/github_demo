@@ -1,8 +1,11 @@
 Vue.component("searchComponent", {
   template: `
     <div class='repo'>
-      <div>{{repoData.name}}</div>
-      <div>Updated on {{update}}</div>
+      <div>
+        <div class='repo-title'>{{repoData.name}}</div>
+        <div class='repo-description'>{{repoData.description}}</div>
+      </div>
+      <div class='repo-time'>Updated {{update}}</div>
     </div>
   `,
   props: {
@@ -40,10 +43,10 @@ Vue.component("searchComponent", {
         hour: parseInt(this.repoData.updated_at.slice(11,13))
       }
       if(update.year !== now.year){
-        return `${update.date} ${monthEng[update.month]} ${update.year}`
+        return `on ${update.date} ${monthEng[update.month]} ${update.year}`
       }
       if((now.month-update.month)*30+ (now.date-update.date)>30){
-        return `${update.date} ${monthEng[update.month]}`
+        return `on ${update.date} ${monthEng[update.month]}`
       }
       if(((now.month-update.month)*30+ (now.date-update.date))*24 + (now.hour-update.hour)>48){
         return `${(now.month-update.month)*30+ (now.date-update.date)} days ago`
