@@ -4,6 +4,10 @@ Vue.component("searchComponent", {
       <div class='repo-wrap'>
         <a target='_blank' class='repo-title' :href='repoData.html_url'>{{repoData.name}}</a>
         <div class='repo-description'>{{repoData.description}}</div>
+        <span v-if='language'>
+          <span class='repo-circle' :style='{backgroundColor: language}'></span>
+          <span class='repo-language'>{{repoData.language}}</span>
+        </span>
       </div>
       <div class='repo-time'>Updated {{update}}</div>
     </div>
@@ -11,6 +15,16 @@ Vue.component("searchComponent", {
   props: {
     repoData: {
       required: true
+    }
+  },
+  data(){
+    return{
+      lang:{
+        javascript: '#F1E05A',
+        css: '#563D7C',
+        html: '#E34C26',
+        others: '#89e051'
+      }
     }
   },
   computed:{
@@ -66,6 +80,15 @@ Vue.component("searchComponent", {
         hour: parseInt(this.repoData.updated_at.slice(11,13))
       }
       return update
+    },
+    language(){
+      if(!this.repoData.language){
+        return false
+      }
+      if(this.lang[this.repoData.language.toLowerCase()]){
+        return this.lang[this.repoData.language.toLowerCase()]
+      }
+      return this.lang['others']
     }
   }
 });

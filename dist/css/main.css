@@ -849,6 +849,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #24292E;
+}
+
+main .container {
+  width: 80%;
+}
+
 .loading {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -869,6 +882,7 @@ body {
 
 .repo {
   padding: 24px 0;
+  border-bottom: 1px solid #e1e4e8;
 }
 
 .repo-wrap {
@@ -884,8 +898,26 @@ body {
   text-decoration: underline;
 }
 
+.repo-description {
+  margin: 10px 0;
+  color: #5F666F;
+}
+
 .repo-time {
   float: right;
+  font-size: 14px;
+  color: #5F666F;
+  margin-top: 10px;
+}
+
+.repo-circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.repo-language {
   font-size: 14px;
   color: #5F666F;
 }
