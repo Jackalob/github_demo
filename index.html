@@ -21,9 +21,13 @@
               <input type="text" placeholder="Search Username" v-model.trim='username'>
               <button @click='getName'>查詢</button>
             </div>
-            <template>
-              <search-component :data='data'/>
-            </template>
+            <div class="list">
+              <div class="repo-title"></div>
+              <template v-for='e,i in repoData'>
+                <search-component :repo-data='repoData[i]' />
+              </template>
+            </div>
+
           </div>
         </div>
       </div>
