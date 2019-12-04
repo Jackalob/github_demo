@@ -12,7 +12,7 @@ Vue.component("searchComponent", {
 new Vue({
   el: "#app",
   data: {
-    status: false,
+    loading: false,
     username: "jackalob",
     data: [],
     searched: [],
@@ -29,7 +29,7 @@ new Vue({
       }
     },
     getName() {
-      this.status = false;
+      this.loading = false;
       axios
         .get(`https://api.github.com/users/${this.username}`)
         .then(res => {
@@ -38,7 +38,7 @@ new Vue({
           this.getRepos();
         })
         .catch(err => {
-          this.status = true
+          this.loading = true
         });
     },
     getRepos() {
@@ -48,7 +48,7 @@ new Vue({
           console.log(res.data);
           this.data = res.data;
           this.userExistence = true;
-          this.status = true
+          this.loading = true
         })
         .catch(err => {
           this.data = [];
