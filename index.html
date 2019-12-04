@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="./dist/css/main.css">
   <title>Github | Demo</title>
 </head>
+
 <body>
   <div id="app">
     <section>
@@ -14,9 +16,14 @@
         <div class="banner">
         </div>
         <div class="main">
-          <div class="search">
-            <input type="text" placeholder="用戶ID">
-            <button>查詢</button>
+          <div class="container">
+            <div class="search">
+              <input type="text" placeholder="Search Username" v-model.trim='username'>
+              <button @click='getRepos'>查詢</button>
+            </div>
+            <template>
+              <search-component :data='data'/>
+            </template>
           </div>
         </div>
       </div>
@@ -26,4 +33,5 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js'></script>
   <script src="./src/script.js"></script>
 </body>
+
 </html>
