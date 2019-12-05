@@ -101,7 +101,8 @@ new Vue({
     userData: [],
     repoData: [],
     searched: [],
-    userExistence: null
+    userExistence: null,
+    inputWidth: false,
   },
   methods: {
     addToSearched() {
@@ -142,7 +143,7 @@ new Vue({
         .catch(err => {
           
         });
-    }
+    },
   },
   beforeMount() {
     this.getName();
@@ -150,6 +151,7 @@ new Vue({
   watch: {
     searched() {},
     userData() {},
-    repoData() {}
+    repoData() {},
+    inputWidth(){}
   }
 });

@@ -846,7 +846,7 @@ img {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -854,12 +854,128 @@ body {
   padding: 0 20px;
 }
 
+a {
+  color: white;
+}
+
 header {
-  background-color: #24292E;
+  width: 100%;
+  background-color: #24292e;
+}
+
+header .container {
+  padding: 12px 0px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo-svg {
+  width: 40px;
+  height: 40px;
+}
+
+header .logo-title {
+  font-family: "Courgette", cursive;
+  color: white;
+  font-size: 24px;
+  margin-left: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header .search {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 50px;
+}
+
+header .search-wrap {
+  display: inline-block;
+}
+
+header .search-content {
+  background-color: #3f4448;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .search-content-input {
+  width: 300px;
+  padding: 7px 8px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  -webkit-transition: width 0.2s 0.05s ease-in-out;
+  transition: width 0.2s 0.05s ease-in-out;
+}
+
+header .search-content-input::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+header .search-content-input:-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+header .search-content-input::-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+header .search-content-input::placeholder {
+  padding-left: 10px;
+}
+
+header .search-content-img {
+  padding-right: 8px;
+  width: 32px;
+  height: 22px;
+}
+
+header .search-content-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+header .my-github {
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  font-size: 14px;
+  border: 2px solid white;
+  border-radius: 5px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+header .my-github:hover {
+  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.7);
 }
 
 main .container {
-  max-width: 1280px;
+  width: 80%;
 }
 
 .loading {
@@ -891,7 +1007,7 @@ main .container {
 
 .repo-title {
   font-size: 20px;
-  color: #0366D6;
+  color: #0366d6;
 }
 
 .repo-title:hover {
@@ -900,13 +1016,13 @@ main .container {
 
 .repo-description {
   margin: 10px 0;
-  color: #5F666F;
+  color: #5f666f;
 }
 
 .repo-time {
   float: right;
   font-size: 14px;
-  color: #5F666F;
+  color: #5f666f;
   margin-top: 10px;
 }
 
@@ -919,6 +1035,20 @@ main .container {
 
 .repo-language {
   font-size: 14px;
-  color: #5F666F;
+  color: #5f666f;
+}
+
+.animation .search-content {
+  background-color: #24292e;
+}
+
+.animation .search-content-input {
+  width: 400px;
+  background-color: #fff;
+  color: #24292e;
+}
+
+.animation .search-content-img > img {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

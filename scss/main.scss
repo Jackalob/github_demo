@@ -1,71 +1,155 @@
-
-@import 'reset';
-@import 'variable';
-@import 'function';
-@import 'extend';
-@import 'mixin';
-@import 'grid';
-@import 'font';
+@import "reset";
+@import "variable";
+@import "function";
+@import "extend";
+@import "mixin";
+@import "grid";
+@import "font";
 
 //var
 //utils
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-.container{
+.container {
   margin: 0 auto;
   padding: 0 20px;
 }
+a {
+  color: white;
+}
 //header
-header{
-  background-color: #24292E;
+header {
+  width: 100%;
+  background-color: #24292e;
+  .container{
+    padding: 12px 0px;
+    width: 90%;
+    @include flex(none, center);
+  }
+  
+  .logo {
+    @include flex(none, center);
+    &-svg {
+      width: 40px;
+      height: 40px;
+    }
+    &-title {
+      font-family: "Courgette", cursive;
+      color: white;
+      font-size: 24px;
+      margin-left: 5px;
+      user-select: none;
+    }
+  }
+  .search {
+    flex-grow: 1;
+    margin-left: 50px;
+    @at-root &-wrap {
+      display: inline-block;
+    }
+    @at-root &-content {
+      background-color: #3f4448;
+      @include flex(none, center);
+      &-input {
+        width: 300px;
+        padding: 7px 8px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        outline: none;
+        transition: width 0.2s 0.05s ease-in-out;
+        &::placeholder {
+          padding-left: 10px;
+        }
+      }
+      &-img {
+        padding-right: 8px;
+        width: 32px;
+        height: 22px;
+        > img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .my-github {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all .2s;
+    &:hover{
+      color: hsla(0,0%,100%,.7);
+      border-color: hsla(0,0%,100%,.7);
+    }
+  }
 }
 //main
-main .container{
-  max-width: 1280px;
+main .container {
+  width: 80%;
 }
-.loading{
-  background-color: rgba(#000,0.5);
+.loading {
+  background-color: rgba(#000, 0.5);
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  @include flex()
+  @include flex();
 }
 //component
-.repo{
+.repo {
   @extend %clearfix;
   padding: 24px 0;
   border-bottom: 1px solid #e1e4e8;
-  &-wrap{
-    float:left;
+  &-wrap {
+    float: left;
   }
-  &-title{
+  &-title {
     font-size: 20px;
-    color: #0366D6;
-    &:hover{
+    color: #0366d6;
+    &:hover {
       text-decoration: underline;
     }
   }
-  &-description{
+  &-description {
     margin: 10px 0;
-    color: #5F666F;
+    color: #5f666f;
   }
-  &-time{
+  &-time {
     float: right;
     font-size: 14px;
-    color: #5F666F;
+    color: #5f666f;
     margin-top: 10px;
   }
-  &-circle{
+  &-circle {
     display: inline-block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
   }
-  &-language{
+  &-language {
     font-size: 14px;
-    color: #5F666F;
+    color: #5f666f;
+  }
+}
+//animation
+.animation {
+  .search-content{
+    background-color: #24292e;
+  }
+  .search-content-input {
+    width: 400px;
+    background-color: #fff;
+    color: #24292e;
+  }
+  .search-content-img{
+    >img{
+      display: none;
+    }
   }
 }
