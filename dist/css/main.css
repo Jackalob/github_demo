@@ -1046,6 +1046,12 @@ main .container {
   top: -1px;
 }
 
+.no-repo {
+  margin-top: 20px;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
 .repo {
   padding: 20px 0;
   border-bottom: 1px solid #e1e4e8;
