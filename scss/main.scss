@@ -90,7 +90,7 @@ header {
 }
 //main
 main .container {
-  width: 80%;
+  width: 65%;
 }
 .loading {
   background-color: rgba(#000, 0.5);
@@ -101,13 +101,42 @@ main .container {
   height: 100%;
   @include flex();
 }
-//component
+.classify{
+  display: inline-block;
+  padding: 36px 0 12px;
+  &-wrap{
+    display: flex;
+    padding: 0 5px;
+  }
+  &-count{
+    width: 22px;
+    height: 22px;
+    @include flex(center,center);
+    background-color: #e1e4e8;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+.sort-line{
+  height: 1px;
+  background-color: #e1e4e8;
+  position: relative;
+  @include pseudo(){
+    width: 135px;
+    height: 2px;
+    background-color: #e36209;
+    left: 0;
+    top: -1px;
+  }
+}
+//component-search
 .repo {
   @extend %clearfix;
-  padding: 24px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #e1e4e8;
   &-wrap {
-    float: left;
+    width: 100%;
   }
   &-title {
     font-size: 20px;
@@ -120,21 +149,77 @@ main .container {
     margin: 10px 0;
     color: #5f666f;
   }
-  &-time {
-    float: right;
-    font-size: 14px;
-    color: #5f666f;
-    margin-top: 10px;
+  &-detail{
+    @include flex(none,center);
+    font-size: 12px;
   }
   &-circle {
-    display: inline-block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
   }
-  &-language {
+  &-img{
+    margin-bottom: 2px;
+  }
+  &-text {
+    color: #5f666f;
+    margin: 0 20px 0 5px;
+  }
+  &-starNfork{
+    display: flex;
+    &-img{
+      @include flex(none,center);
+    }
+  }
+  &-svg{
+    fill: #5f666f;
+  }
+  &-space{
+    flex-grow: 1;
+  }
+  &-time {
     font-size: 14px;
     color: #5f666f;
+  }
+}
+//component-profile
+.profile{
+  padding-right: 30px;
+  &-pic{ 
+    margin-top: 24px;
+
+    >img{
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+    }
+  }
+  &-nameset{
+    padding: 16px 0;
+  }
+  &-name{
+    font-size: 26px;
+  }
+  &-username{
+    font-size: 20px;
+  }
+  &-btn{
+    display: block;
+    padding: 5px;
+    color: #24292e;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    border: 1px solid rgba(27,31,35,.2);
+    text-align: center;
+    border-radius: 5px;
+    transition: all .2s;
+    margin-bottom: 16px;
+    &:hover{
+      background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+      border-color: rgba(27,31,35,.35);
+    }
+  }
+  &-bio{
+    font-size: 14px;
   }
 }
 //animation

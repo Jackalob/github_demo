@@ -1,5 +1,16 @@
 Vue.component("userProfile",{
   template:`
+    <div class='profile'>
+      <div class='profile-pic'>
+        <img :src='userData.avatar_url'></img>
+      </div>
+      <div class='profile-nameset'>
+        <div class='profile-name'>{{userData.name}}</div>
+        <div class='profile-username'>{{userData.login}}</div>
+      </div>
+      <a class='profile-btn' target='_blank' :href='userData.html_url'>Overview</a>
+      <div class='profile-bio'>{{userData.bio}}</div>
+    </div>
   `,
   props:{
     userData:{
@@ -13,12 +24,25 @@ Vue.component("searchComponent", {
       <div class='repo-wrap'>
         <a target='_blank' class='repo-title' :href='repoData.html_url'>{{repoData.name}}</a>
         <div class='repo-description'>{{repoData.description}}</div>
-        <span v-if='language'>
-          <span class='repo-circle' :style='{backgroundColor: language}'></span>
-          <span class='repo-language'>{{repoData.language}}</span>
-        </span>
+        <div class='repo-detail' v-if='language'>
+          <span class='repo-circle repo-img' :style='{backgroundColor: language}'></span>
+          <span class='repo-text'>{{repoData.language}}</span>
+          <span class='repo-starNfork' v-if='repoData.stargazers_count>0'>
+            <div class='repo-img repo-starNfork-img'>
+              <svg class='repo-svg' aria-label="star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+            </div>
+            <span class='repo-text'>{{repoData.stargazers_count}}</span>
+          </span>
+          <span class='repo-starNfork' v-if='repoData.forks_count>0'>
+            <div class='repo-img repo-starNfork-img'>
+              <svg class='repo-svg' aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+            </div>
+            <span class='repo-text'>{{repoData.forks_count}}</span>
+          </span>
+          <span class='repo-space'></span>
+          <span class='repo-time'>Updated {{update}}</span>
+        </div>
       </div>
-      <div class='repo-time'>Updated {{update}}</div>
     </div>
   `,
   props: {
