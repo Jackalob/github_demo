@@ -14,8 +14,6 @@
   <div id="app">
     <section @click='inputWidth = false'>
       <div>
-        <div class="banner">
-        </div>
         <header :class='{animation:inputWidth}'>
           <div class="container">
             <div class="logo">
@@ -46,7 +44,11 @@
         <main class="main">
           <div class="container">
             <div class="grid">
-              <div class="profile col-8"></div>
+              <div class="profile col-8">
+                <template>
+                  <user-profile :user-data='userData'/>
+                </template>
+              </div>
               <div class="list col-16">
                 <template v-for='e,i in repoData'>
                   <search-component :repo-data='repoData[i]' />

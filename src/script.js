@@ -1,3 +1,12 @@
+Vue.component("userProfile",{
+  template:`
+  `,
+  props:{
+    userData:{
+      required:true
+    }
+  }
+})
 Vue.component("searchComponent", {
   template: `
     <div class='repo'>
