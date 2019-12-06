@@ -747,9 +747,13 @@ img {
   background-color: #f00;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 320px;
+  min-width: 300px;
 }
 
 .container {
@@ -919,14 +923,19 @@ header .search-content-input {
 }
 
 header .search-content-img {
-  padding-right: 8px;
-  width: 32px;
-  height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 8px 5px 0;
+  width: 30px;
+  cursor: pointer;
 }
 
-header .search-content-img > img {
-  width: 100%;
-  height: 100%;
+header .search-content-svg {
+  fill: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -1042,6 +1051,7 @@ main .container {
 
 .no-user > p > span {
   font-weight: 700;
+  word-wrap: break-word;
 }
 
 .repo {
@@ -1134,6 +1144,9 @@ main .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1199,7 +1212,7 @@ main .container {
 }
 
 .animation .search-content {
-  background-color: #24292e;
+  background-color: #fff;
 }
 
 .animation .search-content-input {
@@ -1214,14 +1227,8 @@ main .container {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .animation .search-content-img {
-    display: none;
-  }
-}
-
-.animation .search-content-img > img {
-  display: none;
+.animation .search-content-svg {
+  fill: #000;
 }
 
 .active .search {

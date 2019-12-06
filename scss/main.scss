@@ -8,9 +8,12 @@
 
 //var
 //utils
+html{
+  overflow-y: scroll;
+}
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 320px;
+  min-width: 300px;
 }
 .container {
   margin: 0 auto;
@@ -112,13 +115,13 @@ header {
         }
       }
       &-img {
-        padding-right: 8px;
-        width: 32px;
-        height: 22px;
-        > img {
-          width: 100%;
-          height: 100%;
-        }
+        @include flex(none,center);
+        padding: 5px 8px 5px 0;
+        width: 30px;
+        cursor: pointer;
+      }
+      &-svg{
+        fill: #fff;
       }
     }
   }
@@ -199,6 +202,7 @@ main .container {
     margin-top: 40px;
     > span {
       font-weight: 700;
+      word-wrap: break-word;
     }
   }
 }
@@ -258,7 +262,7 @@ main .container {
   padding-right: 30px;
   @include media(mobile) {
     padding-right: 0;
-    display: flex;
+    @include flex(none,start)
   }
   &-pic {
     margin-top: 24px;
@@ -310,7 +314,7 @@ main .container {
 //status
 .animation {
   .search-content {
-    background-color: #24292e;
+    background-color: #fff;
   }
   .search-content-input {
     width: 400px;
@@ -320,13 +324,8 @@ main .container {
       width: 100%;   
     }
   }
-  .search-content-img {
-    @include media(mobile){
-      display: none;   
-    }
-    > img {
-      display: none;
-    }
+  .search-content-svg {
+    fill: #000;
   }
 }
 .active{

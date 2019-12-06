@@ -161,7 +161,7 @@ new Vue({
           this.addToSearched();
           this.userData = res.data
           console.log(res.data);
-        
+          this.getRepos();
         })
         .catch(err => {
           this.userData = [];
@@ -170,7 +170,7 @@ new Vue({
           this.loading = true;
           this.nowUserName = this.username
         });
-      this.getRepos();
+      
     },
     getRepos() {
       axios
