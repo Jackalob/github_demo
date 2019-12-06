@@ -10,26 +10,62 @@
 //utils
 body {
   font-family: "Roboto", sans-serif;
+  min-width: 320px;
 }
 .container {
   margin: 0 auto;
   padding: 0 20px;
+  @include media(mobile) {
+    padding: 0 16px;
+  }
 }
 a {
   color: white;
+}
+.flex-space {
+  flex-grow: 1;
+}
+//burger
+.burger {
+  display: none;
+  cursor: pointer;
+  > span {
+    width: 24px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 5px;
+    transition: background-color .2s;
+  }
+  &:hover {
+    > span {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  @include media(mobile){
+    display: block;
+  }
 }
 //header
 header {
   width: 100%;
   background-color: #24292e;
-  .container{
-    padding: 12px 0px;
-    width: 90%;
+  .container {
+    padding: 12px 20px;
+    width: 100%;
     @include flex(none, center);
+    flex-wrap: wrap;
+    @include media(mobile) {
+      padding: 12px 16px;
+    }
   }
-  
   .logo {
     @include flex(none, center);
+    @include media(mobile){
+      flex-grow: 1;
+      justify-content: center;
+    }
     &-svg {
       width: 40px;
       height: 40px;
@@ -40,13 +76,25 @@ header {
       font-size: 24px;
       margin-left: 5px;
       user-select: none;
+      @include media(mobile) {
+        display: none;
+      }
     }
   }
   .search {
-    flex-grow: 1;
     margin-left: 50px;
+    @include media(mobile) {
+      margin-left: 0;
+      order: 1;
+      width: 100%;
+      margin: 12px 0 6px;
+      display: none;
+    }
     @at-root &-wrap {
       display: inline-block;
+      @include media(mobile){
+        display: block;
+      }
     }
     @at-root &-content {
       background-color: #3f4448;
@@ -59,6 +107,9 @@ header {
         border: none;
         outline: none;
         transition: width 0.2s 0.05s ease-in-out;
+        @include media(mobile){
+          width: 100%;
+        }
       }
       &-img {
         padding-right: 8px;
@@ -71,6 +122,11 @@ header {
       }
     }
   }
+  .flex-space{
+    @include media(mobile){
+      display: none;
+    }
+  }
   .my-github {
     display: block;
     padding: 5px 10px;
@@ -78,16 +134,19 @@ header {
     font-size: 14px;
     border: 2px solid white;
     border-radius: 5px;
-    transition: all .2s;
-    &:hover{
-      color: hsla(0,0%,100%,.7);
-      border-color: hsla(0,0%,100%,.7);
+    transition: all 0.2s;
+    &:hover {
+      color: hsla(0, 0%, 100%, 0.7);
+      border-color: hsla(0, 0%, 100%, 0.7);
     }
   }
 }
 //main
 main .container {
-  width: 65%;
+  width: 1200px;
+  @include media(pc) {
+    width: 100%;
+  }
 }
 .loading {
   background-color: rgba(#000, 0.5);
@@ -98,28 +157,28 @@ main .container {
   height: 100%;
   @include flex();
 }
-.classify{
+.classify {
   display: inline-block;
   padding: 36px 0 12px;
-  &-wrap{
+  &-wrap {
     display: flex;
     padding: 0 5px;
   }
-  &-count{
+  &-count {
     width: 22px;
     height: 22px;
-    @include flex(center,center);
+    @include flex(center, center);
     background-color: #e1e4e8;
     border-radius: 50%;
     font-size: 12px;
     margin-left: 5px;
   }
 }
-.sort-line{
+.sort-line {
   height: 1px;
   background-color: #e1e4e8;
   position: relative;
-  @include pseudo(){
+  @include pseudo() {
     width: 135px;
     height: 2px;
     background-color: #e36209;
@@ -127,18 +186,18 @@ main .container {
     top: -1px;
   }
 }
-.no-repo{
+.no-repo {
   margin-top: 20px;
   padding-left: 5px;
   font-size: 20px;
 }
-.no-user{
+.no-user {
   text-align: center;
   margin-top: 80px;
-  >p{
+  > p {
     font-size: 20px;
     margin-top: 40px;
-    >span{
+    > span {
       font-weight: 700;
     }
   }
@@ -162,95 +221,116 @@ main .container {
     margin: 10px 0;
     color: #5f666f;
   }
-  &-detail{
-    @include flex(none,center);
+  &-detail {
+    @include flex(none, center);
     font-size: 12px;
   }
-  &-lang{
-    @include flex(none,center);
+  &-lang {
+    @include flex(none, center);
   }
   &-circle {
     width: 12px;
     height: 12px;
     border-radius: 50%;
   }
-  &-img{
+  &-img {
     margin-bottom: 2px;
   }
   &-text {
     color: #5f666f;
     margin: 0 20px 0 5px;
   }
-  &-starNfork{
+  &-starNfork {
     display: flex;
-    &-img{
-      @include flex(none,center);
+    &-img {
+      @include flex(none, center);
     }
   }
-  &-svg{
+  &-svg {
     fill: #5f666f;
   }
-  &-space{
-    flex-grow: 1;
-  }
   &-time {
-    font-size: 14px;
     color: #5f666f;
   }
 }
 //component-profile
-.profile{
+.profile {
   padding-right: 30px;
-  &-pic{ 
+  @include media(mobile) {
+    padding-right: 0;
+    display: flex;
+  }
+  &-pic {
     margin-top: 24px;
-
-    >img{
+    @include media(mobile) {
+      width: 35%;
+      padding-right: 10px;
+    }
+    > img {
       width: 100%;
       height: 100%;
       border-radius: 6px;
     }
   }
-  &-nameset{
-    padding: 16px 0;
+  &-pack {
+    @include media(mobile) {
+      width: 65%;
+      padding-left: 10px;
+    }
   }
-  &-name{
+  &-nameset {
+    margin: 20px 0 16px;
+  }
+  &-name {
     font-size: 26px;
   }
-  &-username{
+  &-username {
     font-size: 20px;
+    color: #666;
   }
-  &-btn{
+  &-btn {
     display: block;
     padding: 5px;
     color: #24292e;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-    border: 1px solid rgba(27,31,35,.2);
+    background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+    border: 1px solid rgba(27, 31, 35, 0.2);
     text-align: center;
     border-radius: 5px;
-    transition: all .2s;
+    transition: all 0.2s;
     margin-bottom: 16px;
-    &:hover{
-      background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-      border-color: rgba(27,31,35,.35);
+    &:hover {
+      background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+      border-color: rgba(27, 31, 35, 0.35);
     }
   }
-  &-bio{
+  &-bio {
     font-size: 14px;
   }
 }
-//animation
+//status
 .animation {
-  .search-content{
+  .search-content {
     background-color: #24292e;
   }
   .search-content-input {
     width: 400px;
     background-color: #fff;
     color: #24292e;
+    @include media(mobile){
+      width: 100%;   
+    }
   }
-  .search-content-img{
-    >img{
+  .search-content-img {
+    @include media(mobile){
+      display: none;   
+    }
+    > img {
       display: none;
     }
+  }
+}
+.active{
+  .search{
+    display: block;
   }
 }

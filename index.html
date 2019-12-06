@@ -14,8 +14,13 @@
   <div id="app">
     <section @click='inputWidth = false'>
       <div>
-        <header :class='{animation:inputWidth}'>
+        <header :class='{animation:inputWidth,active:burgerClick}'>
           <div class="container">
+            <div class="burger" @click='burgerClick=!burgerClick'>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <div class="logo">
               <div class="logo-svg">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 30 30"
@@ -25,7 +30,7 @@
                   </path>
                 </svg>
               </div>
-              <span class="logo-title">Repositories Searcher</span>
+              <span class="logo-title">Repos Searcher</span>
             </div>
             <div class="search">
               <div class="search-wrap">
@@ -38,18 +43,19 @@
                 </div>
               </div>
             </div>
+            <div class="flex-space"></div>
             <a class='my-github' target='_blank' href="https://github.com/Jackalob/github_demo">Github</a>
           </div>
         </header>
         <main class="main">
           <div class="container">
             <div class="grid" v-if='userExistence'>
-              <div class="col-6">
+              <div class="col-6 col-md-8 col-sm-24">
                 <template>
                   <user-profile :user-data='userData'/>
                 </template>
               </div>
-              <div class="col-18">
+              <div class="col-18 col-md-16 col-sm-24">
                 <div class='classify'>
                   <div class="classify-wrap">
                     <p>Repositories</p>

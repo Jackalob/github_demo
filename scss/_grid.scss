@@ -7,7 +7,7 @@
 $cols: 24;
 $gutter: gutter($cols);
 $grid-media: (
-    lg: map-get($map: $device, $key: pcsm),
+    // lg: map-get($map: $device, $key: pcsm),
     md: map-get($map: $device, $key: tablet),
     sm: map-get($map: $device, $key: mobile)
 );

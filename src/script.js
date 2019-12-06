@@ -4,11 +4,13 @@ Vue.component("userProfile",{
       <div class='profile-pic'>
         <img :src='userData.avatar_url'></img>
       </div>
-      <div class='profile-nameset'>
-        <div class='profile-name'>{{userData.name}}</div>
-        <div class='profile-username'>{{userData.login}}</div>
+      <div class='profile-pack'>
+        <div class='profile-nameset'>
+          <div class='profile-name'>{{userData.name}}</div>
+          <div class='profile-username'>{{userData.login}}</div>
+        </div>
+        <a class='profile-btn' target='_blank' :href='userData.html_url'>Overview</a>
       </div>
-      <a class='profile-btn' target='_blank' :href='userData.html_url'>Overview</a>
       <div class='profile-bio'>{{userData.bio}}</div>
     </div>
   `,
@@ -41,7 +43,7 @@ Vue.component("searchComponent", {
             </div>
             <span class='repo-text'>{{repoData.forks_count}}</span>
           </span>
-          <span class='repo-space'></span>
+          <span class='flex-space'></span>
           <span class='repo-time'>Updated {{update}}</span>
         </div>
       </div>
@@ -139,6 +141,7 @@ new Vue({
     userExistence: true,
     inputWidth: false,
     nowUserName: '',
+    burgerClick: false,
   },
   methods: {
     addToSearched() {
