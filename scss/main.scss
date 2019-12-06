@@ -59,9 +59,6 @@ header {
         border: none;
         outline: none;
         transition: width 0.2s 0.05s ease-in-out;
-        &::placeholder {
-          padding-left: 10px;
-        }
       }
       &-img {
         padding-right: 8px;
@@ -135,6 +132,17 @@ main .container {
   padding-left: 5px;
   font-size: 20px;
 }
+.no-user{
+  text-align: center;
+  margin-top: 80px;
+  >p{
+    font-size: 20px;
+    margin-top: 40px;
+    >span{
+      font-weight: 700;
+    }
+  }
+}
 //component-search
 .repo {
   @extend %clearfix;
@@ -157,6 +165,9 @@ main .container {
   &-detail{
     @include flex(none,center);
     font-size: 12px;
+  }
+  &-lang{
+    @include flex(none,center);
   }
   &-circle {
     width: 12px;

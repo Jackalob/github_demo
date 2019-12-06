@@ -24,9 +24,11 @@ Vue.component("searchComponent", {
       <div class='repo-wrap'>
         <a target='_blank' class='repo-title' :href='repoData.html_url'>{{repoData.name}}</a>
         <div class='repo-description'>{{repoData.description}}</div>
-        <div class='repo-detail' v-if='language'>
-          <span class='repo-circle repo-img' :style='{backgroundColor: language}'></span>
-          <span class='repo-text'>{{repoData.language}}</span>
+        <div class='repo-detail'>
+          <span class='repo-lang' v-if='language'>
+            <span class='repo-circle repo-img' :style='{backgroundColor: language}'></span>
+            <span class='repo-text'>{{repoData.language}}</span>
+          </span>
           <span class='repo-starNfork' v-if='repoData.stargazers_count>0'>
             <div class='repo-img repo-starNfork-img'>
               <svg class='repo-svg' aria-label="star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
@@ -134,8 +136,9 @@ new Vue({
     userData: [],
     repoData: [],
     searched: [],
-    userExistence: null,
+    userExistence: true,
     inputWidth: false,
+    nowUserName: '',
   },
   methods: {
     addToSearched() {
@@ -155,14 +158,16 @@ new Vue({
           this.addToSearched();
           this.userData = res.data
           console.log(res.data);
-          this.getRepos();
+        
         })
         .catch(err => {
           this.userData = [];
           this.repoData = [];
           this.userExistence = false;
           this.loading = true;
+          this.nowUserName = this.username
         });
+      this.getRepos();
     },
     getRepos() {
       axios
@@ -172,6 +177,7 @@ new Vue({
           this.repoData = res.data;
           this.userExistence = true;
           this.loading = true;
+          this.nowUserName = this.username
         })
         .catch(err => {
           
