@@ -69,8 +69,8 @@
                 <div class="no-repo" v-if='repoData.length <= 0 && userExistence'>
                   No public repos found.  
                 </div>
-                <template v-for='e,i in repoData'>
-                  <search-component :repo-data='repoData[i]' />
+                <template v-for='e,i in dataRearrange'>
+                  <search-component :repo-data='dataRearrange[i]' />
                 </template>
               </div>
             </div>
