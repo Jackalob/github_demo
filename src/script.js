@@ -5,13 +5,15 @@ Vue.component("userProfile", {
         <img :src='userData.avatar_url'></img>
       </div>
       <div class='profile-pack'>
-        <div class='profile-nameset'>
-          <div class='profile-name'>{{userData.name}}</div>
-          <div class='profile-username'>{{userData.login}}</div>
+        <div>
+          <div class='profile-nameset'>
+            <div class='profile-name'>{{userData.name}}</div>
+            <div class='profile-username'>{{userData.login}}</div>
+          </div>
+          <a class='profile-btn' target='_blank' :href='userData.html_url'>Overview</a>
         </div>
-        <a class='profile-btn' target='_blank' :href='userData.html_url'>Overview</a>
+        <div class='profile-bio'>{{userData.bio}}</div>
       </div>
-      <div class='profile-bio'>{{userData.bio}}</div>
     </div>
   `,
   props: {

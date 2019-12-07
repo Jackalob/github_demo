@@ -262,7 +262,7 @@ main .container {
   padding-right: 30px;
   @include media(mobile) {
     padding-right: 0;
-    @include flex(none,start)
+    @include flex(none,start);
   }
   &-pic {
     margin-top: 24px;
