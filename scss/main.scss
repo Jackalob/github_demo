@@ -14,6 +14,7 @@ html{
 body {
   font-family: "Roboto", sans-serif;
   min-width: 300px;
+  background-color: #24292e;
 }
 .container {
   margin: 0 auto;
@@ -36,14 +37,14 @@ a {
     width: 24px;
     height: 2px;
     display: block;
-    background-color: #fff;
+    background-color: map-get($map: $color, $key: primary);
     margin: 6px 0;
     border-radius: 5px;
     transition: background-color .2s;
   }
   &:hover {
     > span {
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: map-get($map: $color, $key: accent1);
     }
   }
   @include media(mobile){
@@ -53,7 +54,7 @@ a {
 //header
 header {
   width: 100%;
-  background-color: #24292e;
+  background-color: map-get($map: $color, $key: secondary);
   .container {
     padding: 12px 20px;
     width: 100%;
@@ -72,10 +73,11 @@ header {
     &-svg {
       width: 40px;
       height: 40px;
+      fill: map-get($map: $color, $key: primary);
     }
     &-title {
       font-family: "Courgette", cursive;
-      color: white;
+      color: map-get($map: $color, $key: primary);
       font-size: 24px;
       margin-left: 5px;
       user-select: none;
@@ -100,13 +102,13 @@ header {
       }
     }
     @at-root &-content {
-      background-color: #3f4448;
+      background-color: map-get($map: $color, $key: accent2);
       @include flex(none, center);
       &-input {
         width: 300px;
         padding: 7px 8px;
         background-color: transparent;
-        color: white;
+        color: map-get($map: $color, $key: primary);
         border: none;
         outline: none;
         transition: width 0.2s 0.05s ease-in-out;
@@ -121,7 +123,7 @@ header {
         cursor: pointer;
       }
       &-svg{
-        fill: #fff;
+        fill: map-get($map: $color, $key: primary);
       }
     }
   }
@@ -133,14 +135,15 @@ header {
   .my-github {
     display: block;
     padding: 5px 10px;
-    color: white;
+    color: map-get($map: $color, $key: primary);
     font-size: 14px;
-    border: 2px solid white;
+    font-weight: 700;
+    border: 2px solid map-get($map: $color, $key: primary);
     border-radius: 5px;
     transition: all 0.2s;
     &:hover {
-      color: hsla(0, 0%, 100%, 0.7);
-      border-color: hsla(0, 0%, 100%, 0.7);
+      color: map-get($map: $color, $key: accent1);
+      border-color: map-get($map: $color, $key: accent1);
     }
   }
 }
@@ -166,6 +169,9 @@ main .container {
   &-wrap {
     display: flex;
     padding: 0 5px;
+    p:nth-child(1){
+      color: map-get($map: $color, $key: secondary);
+    }
   }
   &-count {
     width: 22px;
@@ -186,7 +192,7 @@ main .container {
     height: 2px;
     background-color: #e36209;
     left: 0;
-    top: -1px;
+    top: 0;
   }
 }
 .no-repo {
@@ -222,11 +228,13 @@ main .container {
     }
   }
   &-description {
-    margin: 10px 0;
-    color: #5f666f;
+    margin: 10px 0 0;
+    color: map-get($map: $color, $key: text);
   }
   &-detail {
+    margin: 14px 0 0 ;
     @include flex(none, center);
+    color: map-get($map: $color, $key: text);
     font-size: 12px;
   }
   &-lang {
@@ -241,7 +249,6 @@ main .container {
     margin-bottom: 2px;
   }
   &-text {
-    color: #5f666f;
     margin: 0 20px 0 5px;
   }
   &-starNfork {
@@ -252,9 +259,6 @@ main .container {
   }
   &-svg {
     fill: #5f666f;
-  }
-  &-time {
-    color: #5f666f;
   }
 }
 //component-profile
@@ -287,10 +291,11 @@ main .container {
   }
   &-name {
     font-size: 26px;
+    color: map-get($map: $color, $key: secondary);
   }
   &-username {
     font-size: 20px;
-    color: #666;
+    color: map-get($map: $color, $key: text);
   }
   &-btn {
     display: block;
@@ -309,23 +314,24 @@ main .container {
   }
   &-bio {
     font-size: 14px;
+    color: map-get($map: $color, $key: secondary);
   }
 }
 //status
 .animation {
   .search-content {
-    background-color: #fff;
+    background-color: map-get($map: $color, $key: primary);
   }
   .search-content-input {
     width: 400px;
-    background-color: #fff;
-    color: #24292e;
+    background-color: map-get($map: $color, $key: primary);
+    color: map-get($map: $color, $key: secondary);
     @include media(mobile){
       width: 100%;   
     }
   }
   .search-content-svg {
-    fill: #000;
+    fill: map-get($map: $color, $key: secondary);
   }
 }
 .active{
