@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div id="app">
+  <div id="app" @click='closeMore'>
     <section @click='inputWidth = false'>
       <div>
         <header :class='{animation:inputWidth,active:burgerClick}'>
@@ -69,7 +69,7 @@
                   No public repos found.  
                 </div>
                 <template v-for='e,i in dataRearrange'>
-                  <search-component :repo-data='dataRearrange[i]' />
+                  <search-component :repo-data='dataRearrange[i]' :open-more='open_more[i]' :index='i' @changeopen='openMoreHandler' />
                 </template>
               </div>
             </div>
