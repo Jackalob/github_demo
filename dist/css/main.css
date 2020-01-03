@@ -352,7 +352,7 @@ img {
   clear: both;
 }
 
-.sort-line::before {
+.sort-line::before, .dropdown::before {
   position: absolute;
   display: block;
 }
@@ -1181,6 +1181,22 @@ main .container {
   -webkit-box-shadow: 2px 1px 15px rgba(227, 231, 235, 0.3);
           box-shadow: 2px 1px 15px rgba(227, 231, 235, 0.3);
   border-radius: 4px;
+}
+
+.dropdown::before {
+  content: "";
+  width: 0;
+  height: 0;
+  right: 15px;
+  top: -12px;
+  border: 7px solid transparent;
+  border-bottom-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown {
+    width: 265px;
+  }
 }
 
 .dropdown-top {
