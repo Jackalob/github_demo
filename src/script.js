@@ -5799,12 +5799,7 @@ Vue.component("searchComponent", {
         date: nowTime.getDate(),
         hour: nowTime.getHours()
       };
-      let update = {
-        year: parseInt(this.repoData.pushed_at.slice(0, 4)),
-        month: parseInt(this.repoData.pushed_at.slice(5, 7)),
-        date: parseInt(this.repoData.pushed_at.slice(8, 10)),
-        hour: parseInt(this.repoData.pushed_at.slice(11, 13))
-      };
+      let update = this.updateTime;
       if (update.year !== now.year) {
         return `on ${update.date} ${monthEng[update.month]} ${update.year}`;
       }
@@ -5830,10 +5825,10 @@ Vue.component("searchComponent", {
     },
     updateTime() {
       let update = {
-        year: parseInt(this.repoData.pushed_at.slice(0, 4)),
-        month: parseInt(this.repoData.pushed_at.slice(5, 7)),
-        date: parseInt(this.repoData.pushed_at.slice(8, 10)),
-        hour: parseInt(this.repoData.pushed_at.slice(11, 13))
+        year: this.sliceTheDate(0,4),
+        month: this.sliceTheDate(5,7),
+        date: this.sliceTheDate(8,10),
+        hour: this.sliceTheDate(11,13)
       };
       return update;
     },
@@ -5871,6 +5866,14 @@ Vue.component("searchComponent", {
       sel.addRange(TextRange);
       document.execCommand("copy");
     },
+    sliceTheDate(scope1,scope2){
+      if(this.repoData.pushed_at){
+        return parseInt(this.repoData.pushed_at.slice(scope1, scope2))
+      }
+      else{
+        return parseInt(this.repoData.updated_at.slice(scope1, scope2))
+      }
+    }
   }
 });
 
@@ -5893,9 +5896,11 @@ new Vue({
       let list = [];
       for (let i = 0; i < this.repoData.length; i++) {
         let parseTime = this.repoData[i].pushed_at;
+        if(!parseTime) parseTime = this.repoData[i].updated_at;
         let obj = { index: i, time: parseTime };
         list.push(obj);
       }
+      console.log(list)
       return list;
     },
     timeRearrange() {
@@ -5933,7 +5938,7 @@ new Vue({
         .then(res => {
           this.addToSearched();
           this.userData = res.data;
-          console.log(res.data);
+          // console.log(res.data);
           this.getRepos();
         })
         .catch(err => {
@@ -5948,7 +5953,7 @@ new Vue({
       axios
         .get(`https://api.github.com/users/${this.username}/repos`)
         .then(res => {
-          console.log(res.data);
+          // console.log(res.data);
           this.repoData = res.data;
           this.userExistence = true;
           this.loading = true;
