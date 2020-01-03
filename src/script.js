@@ -1,3 +1,5 @@
+
+
 Vue.component("userProfile", {
   template: `
     <div class='profile'>
@@ -48,22 +50,52 @@ Vue.component("searchComponent", {
           <span class='flex-space'></span>
           <span class='repo-time'>Updated {{update}}</span>
         </div>
+        <a class='repo-more' href='javascript:;' @click.stop='openHandler'>More
+        </a>
+        <div class='dropdown' v-if='openMore' @click.stop> 
+          <div class='dropdown-top'>
+            <h4 class='dropdown-h'>Clone with HTTP</h4>
+            <div class='dropdown-input'>
+              <input id='dropInput1' :value='repoData.clone_url' onfocus="this.select()" readonly='readonly'/>
+              <span @click='CopyTextToClipboard("dropInput1")'>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="16" height="16"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#24292e"><path d="M28.66667,14.33333c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v100.33333h14.33333v-100.33333h100.33333v-14.33333zM57.33333,43c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v86c0,7.91917 6.41417,14.33333 14.33333,14.33333h86c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-86c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM57.33333,57.33333h86v86h-86z"></path></g></g></svg>
+              </span>
+            </div>
+            <h4 class='dropdown-h'>Clone with SSH</h4>
+            <div class='dropdown-input'>
+              <input id='dropInput2' :value='repoData.ssh_url' onfocus="this.select()" readonly='readonly'/>
+              <span @click='CopyTextToClipboard("dropInput2")'>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="16" height="16"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#24292e"><path d="M28.66667,14.33333c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v100.33333h14.33333v-100.33333h100.33333v-14.33333zM57.33333,43c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v86c0,7.91917 6.41417,14.33333 14.33333,14.33333h86c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-86c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM57.33333,57.33333h86v86h-86z"></path></g></g></svg>
+              </span>
+            </div>
+          </div>
+          <div class='dropdown-bot'>
+            <a :class="{'not-allow':!hasPage}" :href="getUrl" :target="hasPage?'_blank':''">Page Demo</a>
+            <a :href="'https://codeload.github.com/'+repoData.owner.login+'/'+repoData.name+'/zip/master'">Download ZIP</a>
+          </div> 
+        </div>
       </div>
     </div>
   `,
   props: {
     repoData: {
       required: true
+    },
+    openMore: {
+      required: true
+    },
+    index:{
+      required: true
     }
   },
   data() {
     return {
-      lang: {
-        javascript: "#F1E05A",
-        css: "#563D7C",
-        html: "#E34C26",
-        others: "#89e051"
-      },
       github_lang: {
         "1C Enterprise": {
           type: "programming",
@@ -5741,7 +5773,7 @@ Vue.component("searchComponent", {
           ace_mode: "text",
           language_id: 421
         }
-      }
+      },
     };
   },
   computed: {
@@ -5767,12 +5799,7 @@ Vue.component("searchComponent", {
         date: nowTime.getDate(),
         hour: nowTime.getHours()
       };
-      let update = {
-        year: parseInt(this.repoData.pushed_at.slice(0, 4)),
-        month: parseInt(this.repoData.pushed_at.slice(5, 7)),
-        date: parseInt(this.repoData.pushed_at.slice(8, 10)),
-        hour: parseInt(this.repoData.pushed_at.slice(11, 13))
-      };
+      let update = this.updateTime;
       if (update.year !== now.year) {
         return `on ${update.date} ${monthEng[update.month]} ${update.year}`;
       }
@@ -5798,10 +5825,10 @@ Vue.component("searchComponent", {
     },
     updateTime() {
       let update = {
-        year: parseInt(this.repoData.pushed_at.slice(0, 4)),
-        month: parseInt(this.repoData.pushed_at.slice(5, 7)),
-        date: parseInt(this.repoData.pushed_at.slice(8, 10)),
-        hour: parseInt(this.repoData.pushed_at.slice(11, 13))
+        year: this.sliceTheDate(0,4),
+        month: this.sliceTheDate(5,7),
+        date: this.sliceTheDate(8,10),
+        hour: this.sliceTheDate(11,13)
       };
       return update;
     },
@@ -5813,6 +5840,39 @@ Vue.component("searchComponent", {
         return this.github_lang[this.repoData.language].color
       }
       return '';
+    },
+    hasPage(){
+      return this.repoData.has_pages;
+    },
+    getUrl(){
+      if(this.hasPage){
+        if(this.repoData.name === this.repoData.owner.login+'.github.io')
+          return 'https://'+ this.repoData.owner.login +'.github.io/'
+        else
+          return 'https://'+ this.repoData.owner.login +'.github.io/' + this.repoData.name 
+      }
+      else return 'javascript:;'
+    }
+  },
+  methods: {
+    openHandler(){
+      this.$emit('changeopen',this.index)
+    },
+    CopyTextToClipboard(id) {
+      var TextRange = document.createRange();
+      TextRange.selectNode(document.getElementById(id));
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(TextRange);
+      document.execCommand("copy");
+    },
+    sliceTheDate(scope1,scope2){
+      if(this.repoData.pushed_at){
+        return parseInt(this.repoData.pushed_at.slice(scope1, scope2))
+      }
+      else{
+        return parseInt(this.repoData.updated_at.slice(scope1, scope2))
+      }
     }
   }
 });
@@ -5828,16 +5888,19 @@ new Vue({
     userExistence: true,
     inputWidth: false,
     nowUserName: "",
-    burgerClick: false
+    burgerClick: false,
+    open_more: []
   },
   computed: {
     dataTime() {
       let list = [];
       for (let i = 0; i < this.repoData.length; i++) {
         let parseTime = this.repoData[i].pushed_at;
+        if(!parseTime) parseTime = this.repoData[i].updated_at;
         let obj = { index: i, time: parseTime };
         list.push(obj);
       }
+      console.log(list)
       return list;
     },
     timeRearrange() {
@@ -5856,7 +5919,7 @@ new Vue({
         data.push(this.repoData[this.timeRearrange[i].index]);
       }
       return data;
-    }
+    }                                                             
   },
   methods: {
     addToSearched() {
@@ -5875,7 +5938,7 @@ new Vue({
         .then(res => {
           this.addToSearched();
           this.userData = res.data;
-          console.log(res.data);
+          // console.log(res.data);
           this.getRepos();
         })
         .catch(err => {
@@ -5890,11 +5953,12 @@ new Vue({
       axios
         .get(`https://api.github.com/users/${this.username}/repos`)
         .then(res => {
-          console.log(res.data);
+          // console.log(res.data);
           this.repoData = res.data;
           this.userExistence = true;
           this.loading = true;
           this.nowUserName = this.username;
+          this.getOpenMore();
         })
         .catch(err => {});
     },
@@ -5902,6 +5966,23 @@ new Vue({
     parseISOString(s) {
       var b = s.split(/\D+/);
       return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
+    },
+    getOpenMore(){
+      let i = 0;
+      while(i<this.repoData.length){
+        this.open_more.push(false)
+        i++;
+      }
+    },
+    closeMore(){
+      this.open_more = this.open_more.map(e=>{
+        return e = false;
+      })
+    },
+    openMoreHandler(index){
+      this.closeMore();
+      this.$set(this.open_more,index,true);
+      // this.open_more[index] = true;
     }
   },
   beforeMount() {
@@ -5909,8 +5990,17 @@ new Vue({
   },
   watch: {
     searched() {},
-    userData() {},
-    repoData() {},
-    inputWidth() {}
+    // userData() {},
+    // repoData() {},
+    inputWidth() {
+    },
+    // open_more:{
+    //   handler: function(newVal, oldVal) {
+    //     console.log(newVal);
+    //     console.log('成功')
+    //   },
+    //   deep: true,
+    // },
   }
 });
+
