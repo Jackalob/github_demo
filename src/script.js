@@ -5982,6 +5982,10 @@
         this.closeMore();
         this.$set(this.open_more,index,true);
         // this.open_more[index] = true;
+      },
+      deleteNameHandler(num){
+        this.searched.splice(num,1);
+        
       }
     },
     beforeMount() {
