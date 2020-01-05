@@ -5922,7 +5922,7 @@
     },
     methods: {
       addToSearched() {
-        let totalCount = 6;
+        let totalCount = 5;
         if (this.searched.indexOf(this.username)) {
           this.searched.unshift(this.username);
         }
@@ -5985,7 +5985,7 @@
       },
       deleteNameHandler(num){
         this.searched.splice(num,1);
-        
+
       }
     },
     beforeMount() {
