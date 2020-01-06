@@ -145,6 +145,7 @@ header {
       border: 1px solid map-get($map: $color, $key: forbid);
       background-color: #fff;
       display: none;
+      cursor: pointer;
       &:last-child{
         border-radius: 0 0 2px 2px;
       }

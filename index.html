@@ -47,7 +47,7 @@
                     </svg>
                   </div>
                 </div>
-                <div class="search-history" :style="{bottom: -32*(i+1) +'px'}" v-for='(e,i) in searched'>
+                <div class="search-history" :style="{bottom: -32*(i+1) +'px'}" v-for='(e,i) in searched' @click='username=e;getName()'>
                   <p>{{e}}</p>
                   <div @click.stop='deleteNameHandler(i)'>
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="14" viewBox="0 0 172 172"

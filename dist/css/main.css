@@ -966,6 +966,7 @@ header .search-history {
   border: 1px solid #e1e4e8;
   background-color: #fff;
   display: none;
+  cursor: pointer;
 }
 
 header .search-history:last-child {

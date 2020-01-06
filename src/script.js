@@ -5923,8 +5923,13 @@
     methods: {
       addToSearched() {
         let totalCount = 5;
-        if (this.searched.indexOf(this.username)) {
-          this.searched.unshift(this.username);
+        if (this.searched.indexOf(this.username.toLowerCase())=== -1) {
+          this.searched.unshift(this.username.toLowerCase());
+        }
+        else{
+          let index = this.searched.indexOf(this.username.toLowerCase())
+          this.searched.splice(index,1);
+          this.searched.unshift(this.username.toLowerCase());
         }
         if (this.searched.length > totalCount) {
           this.searched.pop();
@@ -5967,6 +5972,7 @@
         return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
       },
       getOpenMore(){
+        this.open_more = []
         let i = 0;
         while(i<this.repoData.length){
           this.open_more.push(false)
