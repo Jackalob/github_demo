@@ -961,7 +961,6 @@ header .search-history {
           align-items: center;
   position: absolute;
   left: 0;
-  background-color: orange;
   z-index: 1;
   border: 1px solid #e1e4e8;
   background-color: #fff;
@@ -973,13 +972,29 @@ header .search-history:last-child {
   border-radius: 0 0 2px 2px;
 }
 
-header .search-history > p {
-  padding: 5px 8px;
+header .search-history-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header .search-history > div {
-  padding: 5px 12px 5px 6px;
+header .search-history-title > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 12px;
+}
+
+header .search-history-del {
+  padding: 5px 11px 5px 6px;
   cursor: pointer;
+}
+
+header .search-history-svg {
+  fill: #24292e;
 }
 
 @media screen and (max-width: 768px) {
@@ -1430,5 +1445,15 @@ main .container {
 
 .active .search {
   display: block;
+}
+
+header .history-on {
+  background-color: #0366d6;
+  color: #fff;
+  border-color: #0366d6;
+}
+
+.history-on .search-history-svg {
+  fill: #fff;
 }
 /*# sourceMappingURL=main.css.map */

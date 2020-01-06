@@ -140,21 +140,27 @@ header {
       @include flex(between,center);
       position: absolute;
       left: 0;
-      background-color: orange;
       z-index: 1;
       border: 1px solid map-get($map: $color, $key: forbid);
-      background-color: #fff;
+      background-color: map-get($map: $color, $key: secondary);
       display: none;
       cursor: pointer;
       &:last-child{
         border-radius: 0 0 2px 2px;
       }
-      >p{
-        padding: 5px 8px;
+      &-title{
+        display: flex;
+        >div{
+          @include flex(none,center);
+          margin: 0 12px;
+        }
       }
-      >div{
-        padding: 5px 12px 5px 6px;
+      &-del{
+        padding: 5px 11px 5px 6px;
         cursor: pointer;
+      }
+      &-svg{
+        fill: map-get($map: $color, $key: primary);
       }
     }
   }
@@ -479,4 +485,12 @@ main .container {
   .search{
     display: block;
   }
+}
+header .history-on{
+  background-color: map-get($color,more_hover);
+  color: map-get($map: $color, $key: secondary);
+  border-color: map-get($color,more_hover);
+}
+.history-on .search-history-svg{
+  fill: map-get($map: $color, $key: secondary);
 }

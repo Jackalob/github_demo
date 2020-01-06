@@ -5888,7 +5888,8 @@
       inputWidth: false,
       nowUserName: "",
       burgerClick: false,
-      open_more: []
+      open_more: [],
+      nowHistory: null
     },
     computed: {
       dataTime() {
@@ -5937,6 +5938,7 @@
       },
       getName() {
         this.loading = false;
+        this.nowHistory = null;
         axios
           .get(`https://api.github.com/users/${this.username}`)
           .then(res => {
@@ -5991,6 +5993,29 @@
       },
       deleteNameHandler(num){
         this.searched.splice(num,1);
+      },
+      historyIndexHandler(num){
+        if(num<0){
+          this.historyUp();
+        } 
+        else{
+          this.historyDown();
+        }
+      },
+      historyUp(){
+        if(this.nowHistory>0){
+          this.nowHistory -=1;           
+          this.username = this.searched[this.nowHistory];                                                                    
+        }
+      },
+      historyDown(){
+        if(this.nowHistory === null){
+          this.nowHistory = 0;                                                                                                                                                         
+        }
+        else if(this.nowHistory<this.searched.length-1){
+          this.nowHistory +=1;
+        }
+        this.username = this.searched[this.nowHistory];
       }
     },
     beforeMount() {
@@ -6000,15 +6025,8 @@
       searched() {},
       // userData() {},
       // repoData() {},
-      inputWidth() {
-      },
-      // open_more:{
-      //   handler: function(newVal, oldVal) {
-      //     console.log(newVal);
-      //     console.log('成功')
-      //   },
-      //   deep: true,
-      // },
+      inputWidth() {},
+      nowHistory(){}
     }
   });
 })()
