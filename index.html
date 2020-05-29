@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div id="app" @click='closeMore'>
+  <div id="app" @click='closeMore' >
     <section @click='inputWidth = false'>
       <div>
         <header :class='{animation:inputWidth,active:burgerClick}'>
@@ -21,7 +21,7 @@
               <span></span>
               <span></span>
             </div>
-            <div class="logo">
+            <a class="logo" href="javascript:;">
               <div class="logo-svg">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 30 30">
                   <path
@@ -30,7 +30,7 @@
                 </svg>
               </div>
               <span class="logo-title">Repos Searcher</span>
-            </div>
+            </a>
             <div class="search">
               <div class="search-wrap">
                 <div class="search-content">
@@ -112,8 +112,8 @@
                 <div class="no-repo" v-if='repoData.length <= 0 && userExistence'>
                   No public repos found.
                 </div>
-                <template v-for='e,i in dataRearrange'>
-                  <search-component :repo-data='dataRearrange[i]' :open-more='open_more[i]' :index='i'
+                <template v-for='e,i in limitData'>
+                  <search-component :repo-data='limitData[i]' :open-more='open_more[i]' :index='i'
                     @changeopen='openMoreHandler' />
                 </template>
               </div>

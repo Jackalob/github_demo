@@ -1,4 +1,4 @@
-;(function(){
+(function () {
   Vue.component("userProfile", {
     template: `
       <div class='profile'>
@@ -19,9 +19,9 @@
     `,
     props: {
       userData: {
-        required: true
-      }
-    }
+        required: true,
+      },
+    },
   });
   Vue.component("searchComponent", {
     template: `
@@ -84,14 +84,14 @@
     `,
     props: {
       repoData: {
-        required: true
+        required: true,
       },
       openMore: {
-        required: true
+        required: true,
       },
-      index:{
-        required: true
-      }
+      index: {
+        required: true,
+      },
     },
     data() {
       return {
@@ -102,7 +102,7 @@
             extensions: [".bsl", ".os"],
             tm_scope: "source.bsl",
             ace_mode: "text",
-            language_id: 0
+            language_id: 0,
           },
           ABAP: {
             type: "programming",
@@ -110,14 +110,14 @@
             extensions: [".abap"],
             tm_scope: "source.abap",
             ace_mode: "abap",
-            language_id: 1
+            language_id: 1,
           },
           ABNF: {
             type: "data",
             ace_mode: "text",
             extensions: [".abnf"],
             tm_scope: "source.abnf",
-            language_id: 429
+            language_id: 429,
           },
           "AGS Script": {
             type: "programming",
@@ -128,7 +128,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-c++src",
-            language_id: 2
+            language_id: 2,
           },
           AMPL: {
             type: "programming",
@@ -136,7 +136,7 @@
             extensions: [".ampl", ".mod"],
             tm_scope: "source.ampl",
             ace_mode: "text",
-            language_id: 3
+            language_id: 3,
           },
           ANTLR: {
             type: "programming",
@@ -144,7 +144,7 @@
             extensions: [".g4"],
             tm_scope: "source.antlr",
             ace_mode: "text",
-            language_id: 4
+            language_id: 4,
           },
           "API Blueprint": {
             type: "markup",
@@ -152,7 +152,7 @@
             ace_mode: "markdown",
             extensions: [".apib"],
             tm_scope: "text.html.markdown.source.gfm.apib",
-            language_id: 5
+            language_id: 5,
           },
           APL: {
             type: "programming",
@@ -163,7 +163,7 @@
             ace_mode: "text",
             codemirror_mode: "apl",
             codemirror_mime_type: "text/apl",
-            language_id: 6
+            language_id: 6,
           },
           "ASN.1": {
             type: "data",
@@ -172,7 +172,7 @@
             ace_mode: "text",
             codemirror_mode: "asn.1",
             codemirror_mime_type: "text/x-ttcn-asn",
-            language_id: 7
+            language_id: 7,
           },
           ASP: {
             type: "programming",
@@ -186,12 +186,12 @@
               ".ashx",
               ".asmx",
               ".aspx",
-              ".axd"
+              ".axd",
             ],
             ace_mode: "text",
             codemirror_mode: "htmlembedded",
             codemirror_mime_type: "application/x-aspx",
-            language_id: 8
+            language_id: 8,
           },
           ATS: {
             type: "programming",
@@ -200,7 +200,7 @@
             extensions: [".dats", ".hats", ".sats"],
             tm_scope: "source.ats",
             ace_mode: "ocaml",
-            language_id: 9
+            language_id: 9,
           },
           ActionScript: {
             type: "programming",
@@ -209,7 +209,7 @@
             aliases: ["actionscript 3", "actionscript3", "as3"],
             extensions: [".as"],
             ace_mode: "actionscript",
-            language_id: 10
+            language_id: 10,
           },
           Ada: {
             type: "programming",
@@ -218,7 +218,7 @@
             aliases: ["ada95", "ada2005"],
             tm_scope: "source.ada",
             ace_mode: "ada",
-            language_id: 11
+            language_id: 11,
           },
           "Adobe Font Metrics": {
             type: "data",
@@ -228,10 +228,10 @@
               "acfm",
               "adobe composite font metrics",
               "adobe multiple font metrics",
-              "amfm"
+              "amfm",
             ],
             ace_mode: "text",
-            language_id: 147198098
+            language_id: 147198098,
           },
           Agda: {
             type: "programming",
@@ -239,7 +239,7 @@
             extensions: [".agda"],
             tm_scope: "source.agda",
             ace_mode: "text",
-            language_id: 12
+            language_id: 12,
           },
           Alloy: {
             type: "programming",
@@ -247,7 +247,7 @@
             extensions: [".als"],
             tm_scope: "source.alloy",
             ace_mode: "text",
-            language_id: 13
+            language_id: 13,
           },
           "Alpine Abuild": {
             type: "programming",
@@ -258,7 +258,7 @@
             ace_mode: "sh",
             codemirror_mode: "shell",
             codemirror_mime_type: "text/x-sh",
-            language_id: 14
+            language_id: 14,
           },
           "Altium Designer": {
             type: "data",
@@ -266,7 +266,7 @@
             extensions: [".OutJob", ".PcbDoc", ".PrjPCB", ".SchDoc"],
             tm_scope: "source.ini",
             ace_mode: "ini",
-            language_id: 187772328
+            language_id: 187772328,
           },
           AngelScript: {
             type: "programming",
@@ -276,7 +276,7 @@
             ace_mode: "text",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-c++src",
-            language_id: 389477596
+            language_id: 389477596,
           },
           "Ant Build System": {
             type: "data",
@@ -285,7 +285,7 @@
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "application/xml",
-            language_id: 15
+            language_id: 15,
           },
           ApacheConf: {
             type: "data",
@@ -294,7 +294,7 @@
             filenames: [".htaccess", "apache2.conf", "httpd.conf"],
             tm_scope: "source.apache-config",
             ace_mode: "apache_conf",
-            language_id: 16
+            language_id: 16,
           },
           Apex: {
             type: "programming",
@@ -303,7 +303,7 @@
             ace_mode: "java",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-java",
-            language_id: 17
+            language_id: 17,
           },
           "Apollo Guidance Computer": {
             type: "programming",
@@ -311,7 +311,7 @@
             extensions: [".agc"],
             tm_scope: "source.agc",
             ace_mode: "assembly_x86",
-            language_id: 18
+            language_id: 18,
           },
           AppleScript: {
             type: "programming",
@@ -321,7 +321,7 @@
             tm_scope: "source.applescript",
             ace_mode: "applescript",
             color: "#101F1F",
-            language_id: 19
+            language_id: 19,
           },
           Arc: {
             type: "programming",
@@ -329,7 +329,7 @@
             extensions: [".arc"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 20
+            language_id: 20,
           },
           AsciiDoc: {
             type: "prose",
@@ -337,7 +337,7 @@
             wrap: true,
             extensions: [".asciidoc", ".adoc", ".asc"],
             tm_scope: "text.html.asciidoc",
-            language_id: 22
+            language_id: 22,
           },
           AspectJ: {
             type: "programming",
@@ -345,7 +345,7 @@
             extensions: [".aj"],
             tm_scope: "source.aspectj",
             ace_mode: "text",
-            language_id: 23
+            language_id: 23,
           },
           Assembly: {
             type: "programming",
@@ -354,7 +354,7 @@
             extensions: [".asm", ".a51", ".inc", ".nasm"],
             tm_scope: "source.assembly",
             ace_mode: "assembly_x86",
-            language_id: 24
+            language_id: 24,
           },
           Asymptote: {
             type: "programming",
@@ -365,14 +365,14 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-kotlin",
-            language_id: 591605007
+            language_id: 591605007,
           },
           Augeas: {
             type: "programming",
             extensions: [".aug"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 25
+            language_id: 25,
           },
           AutoHotkey: {
             type: "programming",
@@ -381,7 +381,7 @@
             extensions: [".ahk", ".ahkl"],
             tm_scope: "source.ahk",
             ace_mode: "autohotkey",
-            language_id: 26
+            language_id: 26,
           },
           AutoIt: {
             type: "programming",
@@ -390,7 +390,7 @@
             extensions: [".au3"],
             tm_scope: "source.autoit",
             ace_mode: "autohotkey",
-            language_id: 27
+            language_id: 27,
           },
           Awk: {
             type: "programming",
@@ -398,7 +398,7 @@
             interpreters: ["awk", "gawk", "mawk", "nawk"],
             tm_scope: "source.awk",
             ace_mode: "text",
-            language_id: 28
+            language_id: 28,
           },
           Ballerina: {
             type: "programming",
@@ -406,7 +406,7 @@
             tm_scope: "source.ballerina",
             ace_mode: "text",
             color: "#FF5000",
-            language_id: 720859680
+            language_id: 720859680,
           },
           Batchfile: {
             type: "programming",
@@ -415,14 +415,14 @@
             tm_scope: "source.batchfile",
             ace_mode: "batchfile",
             color: "#C1F12E",
-            language_id: 29
+            language_id: 29,
           },
           Befunge: {
             type: "programming",
             extensions: [".befunge"],
             tm_scope: "source.befunge",
             ace_mode: "text",
-            language_id: 30
+            language_id: 30,
           },
           BibTeX: {
             type: "markup",
@@ -432,7 +432,7 @@
             ace_mode: "tex",
             codemirror_mode: "stex",
             codemirror_mime_type: "text/x-stex",
-            language_id: 982188347
+            language_id: 982188347,
           },
           Bison: {
             type: "programming",
@@ -440,14 +440,14 @@
             tm_scope: "source.yacc",
             extensions: [".bison"],
             ace_mode: "text",
-            language_id: 31
+            language_id: 31,
           },
           BitBake: {
             type: "programming",
             tm_scope: "none",
             extensions: [".bb"],
             ace_mode: "text",
-            language_id: 32
+            language_id: 32,
           },
           Blade: {
             type: "markup",
@@ -455,7 +455,7 @@
             extensions: [".blade", ".blade.php"],
             tm_scope: "text.html.php.blade",
             ace_mode: "text",
-            language_id: 33
+            language_id: 33,
           },
           BlitzBasic: {
             type: "programming",
@@ -463,7 +463,7 @@
             extensions: [".bb", ".decls"],
             tm_scope: "source.blitzmax",
             ace_mode: "text",
-            language_id: 34
+            language_id: 34,
           },
           BlitzMax: {
             type: "programming",
@@ -472,14 +472,14 @@
             aliases: ["bmax"],
             tm_scope: "source.blitzmax",
             ace_mode: "text",
-            language_id: 35
+            language_id: 35,
           },
           Bluespec: {
             type: "programming",
             extensions: [".bsv"],
             tm_scope: "source.bsv",
             ace_mode: "verilog",
-            language_id: 36
+            language_id: 36,
           },
           Boo: {
             type: "programming",
@@ -487,7 +487,7 @@
             extensions: [".boo"],
             ace_mode: "text",
             tm_scope: "source.boo",
-            language_id: 37
+            language_id: 37,
           },
           Brainfuck: {
             type: "programming",
@@ -497,14 +497,14 @@
             ace_mode: "text",
             codemirror_mode: "brainfuck",
             codemirror_mime_type: "text/x-brainfuck",
-            language_id: 38
+            language_id: 38,
           },
           Brightscript: {
             type: "programming",
             extensions: [".brs"],
             tm_scope: "source.brightscript",
             ace_mode: "text",
-            language_id: 39
+            language_id: 39,
           },
           C: {
             type: "programming",
@@ -515,7 +515,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csrc",
-            language_id: 41
+            language_id: 41,
           },
           "C#": {
             type: "programming",
@@ -526,7 +526,7 @@
             color: "#178600",
             aliases: ["csharp"],
             extensions: [".cs", ".cake", ".csx"],
-            language_id: 42
+            language_id: 42,
           },
           "C++": {
             type: "programming",
@@ -553,16 +553,16 @@
               ".ipp",
               ".re",
               ".tcc",
-              ".tpp"
+              ".tpp",
             ],
-            language_id: 43
+            language_id: 43,
           },
           "C-ObjDump": {
             type: "data",
             extensions: [".c-objdump"],
             tm_scope: "objdump.x86asm",
             ace_mode: "assembly_x86",
-            language_id: 44
+            language_id: 44,
           },
           "C2hs Haskell": {
             type: "programming",
@@ -573,14 +573,14 @@
             ace_mode: "haskell",
             codemirror_mode: "haskell",
             codemirror_mime_type: "text/x-haskell",
-            language_id: 45
+            language_id: 45,
           },
           CLIPS: {
             type: "programming",
             extensions: [".clp"],
             tm_scope: "source.clips",
             ace_mode: "text",
-            language_id: 46
+            language_id: 46,
           },
           CMake: {
             type: "programming",
@@ -590,7 +590,7 @@
             ace_mode: "text",
             codemirror_mode: "cmake",
             codemirror_mime_type: "text/x-cmake",
-            language_id: 47
+            language_id: 47,
           },
           COBOL: {
             type: "programming",
@@ -599,7 +599,7 @@
             ace_mode: "cobol",
             codemirror_mode: "cobol",
             codemirror_mime_type: "text/x-cobol",
-            language_id: 48
+            language_id: 48,
           },
           COLLADA: {
             type: "data",
@@ -608,7 +608,7 @@
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
-            language_id: 49
+            language_id: 49,
           },
           CSON: {
             type: "data",
@@ -617,7 +617,7 @@
             codemirror_mode: "coffeescript",
             codemirror_mime_type: "text/x-coffeescript",
             extensions: [".cson"],
-            language_id: 424
+            language_id: 424,
           },
           CSS: {
             type: "markup",
@@ -627,21 +627,21 @@
             codemirror_mime_type: "text/css",
             color: "#563d7c",
             extensions: [".css"],
-            language_id: 50
+            language_id: 50,
           },
           CSV: {
             type: "data",
             ace_mode: "text",
             tm_scope: "none",
             extensions: [".csv"],
-            language_id: 51
+            language_id: 51,
           },
           CWeb: {
             type: "programming",
             extensions: [".w"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 657332628
+            language_id: 657332628,
           },
           "Cabal Config": {
             type: "data",
@@ -652,14 +652,14 @@
             codemirror_mode: "haskell",
             codemirror_mime_type: "text/x-haskell",
             tm_scope: "source.cabal",
-            language_id: 677095381
+            language_id: 677095381,
           },
           "Cap'n Proto": {
             type: "programming",
             tm_scope: "source.capnp",
             extensions: [".capnp"],
             ace_mode: "text",
-            language_id: 52
+            language_id: 52,
           },
           CartoCSS: {
             type: "programming",
@@ -667,7 +667,7 @@
             extensions: [".mss"],
             ace_mode: "text",
             tm_scope: "source.css.mss",
-            language_id: 53
+            language_id: 53,
           },
           Ceylon: {
             type: "programming",
@@ -675,7 +675,7 @@
             extensions: [".ceylon"],
             tm_scope: "source.ceylon",
             ace_mode: "text",
-            language_id: 54
+            language_id: 54,
           },
           Chapel: {
             type: "programming",
@@ -684,14 +684,14 @@
             extensions: [".chpl"],
             tm_scope: "source.chapel",
             ace_mode: "text",
-            language_id: 55
+            language_id: 55,
           },
           Charity: {
             type: "programming",
             extensions: [".ch"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 56
+            language_id: 56,
           },
           ChucK: {
             type: "programming",
@@ -700,7 +700,7 @@
             ace_mode: "java",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-java",
-            language_id: 57
+            language_id: 57,
           },
           Cirru: {
             type: "programming",
@@ -708,7 +708,7 @@
             tm_scope: "source.cirru",
             ace_mode: "cirru",
             extensions: [".cirru"],
-            language_id: 58
+            language_id: 58,
           },
           Clarion: {
             type: "programming",
@@ -716,7 +716,7 @@
             ace_mode: "text",
             extensions: [".clw"],
             tm_scope: "source.clarion",
-            language_id: 59
+            language_id: 59,
           },
           Clean: {
             type: "programming",
@@ -724,7 +724,7 @@
             extensions: [".icl", ".dcl"],
             tm_scope: "source.clean",
             ace_mode: "text",
-            language_id: 60
+            language_id: 60,
           },
           Click: {
             type: "programming",
@@ -732,7 +732,7 @@
             extensions: [".click"],
             tm_scope: "source.click",
             ace_mode: "text",
-            language_id: 61
+            language_id: 61,
           },
           Clojure: {
             type: "programming",
@@ -750,10 +750,10 @@
               ".cljs.hl",
               ".cljscm",
               ".cljx",
-              ".hic"
+              ".hic",
             ],
             filenames: ["riemann.config"],
-            language_id: 62
+            language_id: 62,
           },
           "Closure Templates": {
             type: "markup",
@@ -764,7 +764,7 @@
             aliases: ["soy"],
             extensions: [".soy"],
             tm_scope: "text.html.soy",
-            language_id: 357046146
+            language_id: 357046146,
           },
           "Cloud Firestore Security Rules": {
             type: "data",
@@ -773,7 +773,7 @@
             codemirror_mime_type: "text/css",
             tm_scope: "source.firestore",
             filenames: ["firestore.rules"],
-            language_id: 407996372
+            language_id: 407996372,
           },
           "CoNLL-U": {
             type: "data",
@@ -781,7 +781,7 @@
             tm_scope: "text.conllu",
             ace_mode: "text",
             aliases: ["CoNLL", "CoNLL-X"],
-            language_id: 421026389
+            language_id: 421026389,
           },
           CoffeeScript: {
             type: "programming",
@@ -794,7 +794,7 @@
             extensions: [".coffee", "._coffee", ".cake", ".cjsx", ".iced"],
             filenames: ["Cakefile"],
             interpreters: ["coffee"],
-            language_id: 63
+            language_id: 63,
           },
           ColdFusion: {
             type: "programming",
@@ -803,7 +803,7 @@
             aliases: ["cfm", "cfml", "coldfusion html"],
             extensions: [".cfm", ".cfml"],
             tm_scope: "text.html.cfm",
-            language_id: 64
+            language_id: 64,
           },
           "ColdFusion CFC": {
             type: "programming",
@@ -812,7 +812,7 @@
             aliases: ["cfc"],
             extensions: [".cfc"],
             tm_scope: "source.cfscript",
-            language_id: 65
+            language_id: 65,
           },
           "Common Lisp": {
             type: "programming",
@@ -827,13 +827,13 @@
               ".lsp",
               ".ny",
               ".podsl",
-              ".sexp"
+              ".sexp",
             ],
             interpreters: ["lisp", "sbcl", "ccl", "clisp", "ecl"],
             ace_mode: "lisp",
             codemirror_mode: "commonlisp",
             codemirror_mime_type: "text/x-common-lisp",
-            language_id: 66
+            language_id: 66,
           },
           "Common Workflow Language": {
             aliases: ["cwl"],
@@ -845,7 +845,7 @@
             interpreters: ["cwl-runner"],
             color: "#B5314C",
             tm_scope: "source.cwl",
-            language_id: 988547172
+            language_id: 988547172,
           },
           "Component Pascal": {
             type: "programming",
@@ -856,21 +856,21 @@
             ace_mode: "pascal",
             codemirror_mode: "pascal",
             codemirror_mime_type: "text/x-pascal",
-            language_id: 67
+            language_id: 67,
           },
           Cool: {
             type: "programming",
             extensions: [".cl"],
             tm_scope: "source.cool",
             ace_mode: "text",
-            language_id: 68
+            language_id: 68,
           },
           Coq: {
             type: "programming",
             extensions: [".coq", ".v"],
             tm_scope: "source.coq",
             ace_mode: "text",
-            language_id: 69
+            language_id: 69,
           },
           "Cpp-ObjDump": {
             type: "data",
@@ -879,12 +879,12 @@
               ".c++-objdump",
               ".c++objdump",
               ".cpp-objdump",
-              ".cxx-objdump"
+              ".cxx-objdump",
             ],
             tm_scope: "objdump.x86asm",
             aliases: ["c++-objdump"],
             ace_mode: "assembly_x86",
-            language_id: 70
+            language_id: 70,
           },
           Creole: {
             type: "prose",
@@ -892,7 +892,7 @@
             extensions: [".creole"],
             tm_scope: "text.html.creole",
             ace_mode: "text",
-            language_id: 71
+            language_id: 71,
           },
           Crystal: {
             type: "programming",
@@ -903,7 +903,7 @@
             codemirror_mime_type: "text/x-crystal",
             tm_scope: "source.crystal",
             interpreters: ["crystal"],
-            language_id: 72
+            language_id: 72,
           },
           Csound: {
             type: "programming",
@@ -911,7 +911,7 @@
             extensions: [".orc", ".udo"],
             tm_scope: "source.csound",
             ace_mode: "csound_orchestra",
-            language_id: 73
+            language_id: 73,
           },
           "Csound Document": {
             type: "programming",
@@ -919,7 +919,7 @@
             extensions: [".csd"],
             tm_scope: "source.csound-document",
             ace_mode: "csound_document",
-            language_id: 74
+            language_id: 74,
           },
           "Csound Score": {
             type: "programming",
@@ -927,7 +927,7 @@
             extensions: [".sco"],
             tm_scope: "source.csound-score",
             ace_mode: "csound_score",
-            language_id: 75
+            language_id: 75,
           },
           Cuda: {
             type: "programming",
@@ -937,7 +937,7 @@
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-c++src",
             color: "#3A4E3A",
-            language_id: 77
+            language_id: 77,
           },
           Cycript: {
             type: "programming",
@@ -946,7 +946,7 @@
             ace_mode: "javascript",
             codemirror_mode: "javascript",
             codemirror_mime_type: "text/javascript",
-            language_id: 78
+            language_id: 78,
           },
           Cython: {
             type: "programming",
@@ -957,7 +957,7 @@
             ace_mode: "text",
             codemirror_mode: "python",
             codemirror_mime_type: "text/x-cython",
-            language_id: 79
+            language_id: 79,
           },
           D: {
             type: "programming",
@@ -967,14 +967,14 @@
             ace_mode: "d",
             codemirror_mode: "d",
             codemirror_mime_type: "text/x-d",
-            language_id: 80
+            language_id: 80,
           },
           "D-ObjDump": {
             type: "data",
             extensions: [".d-objdump"],
             tm_scope: "objdump.x86asm",
             ace_mode: "assembly_x86",
-            language_id: 81
+            language_id: 81,
           },
           "DIGITAL Command Language": {
             type: "programming",
@@ -982,7 +982,7 @@
             extensions: [".com"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 82
+            language_id: 82,
           },
           DM: {
             type: "programming",
@@ -991,14 +991,14 @@
             aliases: ["byond"],
             tm_scope: "source.dm",
             ace_mode: "c_cpp",
-            language_id: 83
+            language_id: 83,
           },
           "DNS Zone": {
             type: "data",
             extensions: [".zone", ".arpa"],
             tm_scope: "text.zone_file",
             ace_mode: "text",
-            language_id: 84
+            language_id: 84,
           },
           DTrace: {
             type: "programming",
@@ -1009,7 +1009,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csrc",
-            language_id: 85
+            language_id: 85,
           },
           "Darcs Patch": {
             type: "data",
@@ -1017,7 +1017,7 @@
             extensions: [".darcspatch", ".dpatch"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 86
+            language_id: 86,
           },
           Dart: {
             type: "programming",
@@ -1028,7 +1028,7 @@
             ace_mode: "dart",
             codemirror_mode: "dart",
             codemirror_mime_type: "application/dart",
-            language_id: 87
+            language_id: 87,
           },
           DataWeave: {
             type: "programming",
@@ -1036,7 +1036,7 @@
             extensions: [".dwl"],
             ace_mode: "text",
             tm_scope: "source.data-weave",
-            language_id: 974514097
+            language_id: 974514097,
           },
           Dhall: {
             type: "programming",
@@ -1046,7 +1046,7 @@
             ace_mode: "haskell",
             codemirror_mode: "haskell",
             codemirror_mime_type: "text/x-haskell",
-            language_id: 793969321
+            language_id: 793969321,
           },
           Diff: {
             type: "data",
@@ -1056,14 +1056,14 @@
             ace_mode: "diff",
             codemirror_mode: "diff",
             codemirror_mime_type: "text/x-diff",
-            language_id: 88
+            language_id: 88,
           },
           "DirectX 3D File": {
             type: "data",
             extensions: [".x"],
             ace_mode: "text",
             tm_scope: "none",
-            language_id: 201049282
+            language_id: 201049282,
           },
           Dockerfile: {
             type: "programming",
@@ -1074,7 +1074,7 @@
             ace_mode: "dockerfile",
             codemirror_mode: "dockerfile",
             codemirror_mime_type: "text/x-dockerfile",
-            language_id: 89
+            language_id: 89,
           },
           Dogescript: {
             type: "programming",
@@ -1082,7 +1082,7 @@
             extensions: [".djs"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 90
+            language_id: 90,
           },
           Dylan: {
             type: "programming",
@@ -1092,7 +1092,7 @@
             ace_mode: "text",
             codemirror_mode: "dylan",
             codemirror_mime_type: "text/x-dylan",
-            language_id: 91
+            language_id: 91,
           },
           E: {
             type: "programming",
@@ -1101,7 +1101,7 @@
             interpreters: ["rune"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 92
+            language_id: 92,
           },
           EBNF: {
             type: "data",
@@ -1110,7 +1110,7 @@
             ace_mode: "text",
             codemirror_mode: "ebnf",
             codemirror_mime_type: "text/x-ebnf",
-            language_id: 430
+            language_id: 430,
           },
           ECL: {
             type: "programming",
@@ -1120,7 +1120,7 @@
             ace_mode: "text",
             codemirror_mode: "ecl",
             codemirror_mime_type: "text/x-ecl",
-            language_id: 93
+            language_id: 93,
           },
           ECLiPSe: {
             type: "programming",
@@ -1128,7 +1128,7 @@
             extensions: [".ecl"],
             tm_scope: "source.prolog.eclipse",
             ace_mode: "prolog",
-            language_id: 94
+            language_id: 94,
           },
           EJS: {
             type: "markup",
@@ -1136,14 +1136,14 @@
             extensions: [".ejs"],
             tm_scope: "text.html.js",
             ace_mode: "ejs",
-            language_id: 95
+            language_id: 95,
           },
           EML: {
             type: "data",
             extensions: [".eml", ".mbox"],
             tm_scope: "text.eml.basic",
             ace_mode: "text",
-            language_id: 529653389
+            language_id: 529653389,
           },
           EQ: {
             type: "programming",
@@ -1153,7 +1153,7 @@
             ace_mode: "csharp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csharp",
-            language_id: 96
+            language_id: 96,
           },
           Eagle: {
             type: "data",
@@ -1162,7 +1162,7 @@
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
-            language_id: 97
+            language_id: 97,
           },
           Easybuild: {
             type: "data",
@@ -1172,7 +1172,7 @@
             codemirror_mime_type: "text/x-python",
             tm_scope: "source.python",
             extensions: [".eb"],
-            language_id: 342840477
+            language_id: 342840477,
           },
           "Ecere Projects": {
             type: "data",
@@ -1182,7 +1182,7 @@
             ace_mode: "json",
             codemirror_mode: "javascript",
             codemirror_mime_type: "application/json",
-            language_id: 98
+            language_id: 98,
           },
           EditorConfig: {
             type: "data",
@@ -1193,7 +1193,7 @@
             codemirror_mode: "properties",
             codemirror_mime_type: "text/x-properties",
             tm_scope: "source.editorconfig",
-            language_id: 96139566
+            language_id: 96139566,
           },
           "Edje Data Collection": {
             type: "data",
@@ -1202,7 +1202,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-c++src",
-            language_id: 342840478
+            language_id: 342840478,
           },
           Eiffel: {
             type: "programming",
@@ -1212,7 +1212,7 @@
             ace_mode: "eiffel",
             codemirror_mode: "eiffel",
             codemirror_mime_type: "text/x-eiffel",
-            language_id: 99
+            language_id: 99,
           },
           Elixir: {
             type: "programming",
@@ -1222,7 +1222,7 @@
             ace_mode: "elixir",
             filenames: ["mix.lock"],
             interpreters: ["elixir"],
-            language_id: 100
+            language_id: 100,
           },
           Elm: {
             type: "programming",
@@ -1232,7 +1232,7 @@
             ace_mode: "elm",
             codemirror_mode: "elm",
             codemirror_mime_type: "text/x-elm",
-            language_id: 101
+            language_id: 101,
           },
           "Emacs Lisp": {
             type: "programming",
@@ -1249,13 +1249,13 @@
               "Cask",
               "Project.ede",
               "_emacs",
-              "abbrev_defs"
+              "abbrev_defs",
             ],
             extensions: [".el", ".emacs", ".emacs.desktop"],
             ace_mode: "lisp",
             codemirror_mode: "commonlisp",
             codemirror_mime_type: "text/x-common-lisp",
-            language_id: 102
+            language_id: 102,
           },
           EmberScript: {
             type: "programming",
@@ -1265,7 +1265,7 @@
             ace_mode: "coffee",
             codemirror_mode: "coffeescript",
             codemirror_mime_type: "text/x-coffeescript",
-            language_id: 103
+            language_id: 103,
           },
           Erlang: {
             type: "programming",
@@ -1277,20 +1277,20 @@
               ".escript",
               ".hrl",
               ".xrl",
-              ".yrl"
+              ".yrl",
             ],
             filenames: [
               "Emakefile",
               "rebar.config",
               "rebar.config.lock",
-              "rebar.lock"
+              "rebar.lock",
             ],
             tm_scope: "source.erlang",
             ace_mode: "erlang",
             codemirror_mode: "erlang",
             codemirror_mime_type: "text/x-erlang",
             interpreters: ["escript"],
-            language_id: 104
+            language_id: 104,
           },
           "F#": {
             type: "programming",
@@ -1301,7 +1301,7 @@
             ace_mode: "text",
             codemirror_mode: "mllike",
             codemirror_mime_type: "text/x-fsharp",
-            language_id: 105
+            language_id: 105,
           },
           "F*": {
             fs_name: "Fstar",
@@ -1311,7 +1311,7 @@
             extensions: [".fst"],
             tm_scope: "source.fstar",
             ace_mode: "text",
-            language_id: 336943375
+            language_id: 336943375,
           },
           "FIGlet Font": {
             type: "data",
@@ -1319,7 +1319,7 @@
             extensions: [".flf"],
             tm_scope: "source.figfont",
             ace_mode: "text",
-            language_id: 686129783
+            language_id: 686129783,
           },
           FLUX: {
             type: "programming",
@@ -1327,7 +1327,7 @@
             extensions: [".fx", ".flux"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 106
+            language_id: 106,
           },
           Factor: {
             type: "programming",
@@ -1338,7 +1338,7 @@
             ace_mode: "text",
             codemirror_mode: "factor",
             codemirror_mime_type: "text/x-factor",
-            language_id: 108
+            language_id: 108,
           },
           Fancy: {
             type: "programming",
@@ -1347,7 +1347,7 @@
             filenames: ["Fakefile"],
             tm_scope: "source.fancy",
             ace_mode: "text",
-            language_id: 109
+            language_id: 109,
           },
           Fantom: {
             type: "programming",
@@ -1355,14 +1355,14 @@
             extensions: [".fan"],
             tm_scope: "source.fan",
             ace_mode: "text",
-            language_id: 110
+            language_id: 110,
           },
           "Filebench WML": {
             type: "programming",
             extensions: [".f"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 111
+            language_id: 111,
           },
           Filterscript: {
             type: "programming",
@@ -1370,14 +1370,14 @@
             extensions: [".fs"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 112
+            language_id: 112,
           },
           Formatted: {
             type: "data",
             extensions: [".for", ".eam.fs"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 113
+            language_id: 113,
           },
           Forth: {
             type: "programming",
@@ -1390,13 +1390,13 @@
               ".forth",
               ".fr",
               ".frt",
-              ".fs"
+              ".fs",
             ],
             tm_scope: "source.forth",
             ace_mode: "forth",
             codemirror_mode: "forth",
             codemirror_mime_type: "text/x-forth",
-            language_id: 114
+            language_id: 114,
           },
           Fortran: {
             type: "programming",
@@ -1409,13 +1409,13 @@
               ".f77",
               ".f95",
               ".for",
-              ".fpp"
+              ".fpp",
             ],
             tm_scope: "source.fortran",
             ace_mode: "text",
             codemirror_mode: "fortran",
             codemirror_mime_type: "text/x-fortran",
-            language_id: 107
+            language_id: 107,
           },
           FreeMarker: {
             type: "programming",
@@ -1424,7 +1424,7 @@
             extensions: [".ftl"],
             tm_scope: "text.html.ftl",
             ace_mode: "ftl",
-            language_id: 115
+            language_id: 115,
           },
           Frege: {
             type: "programming",
@@ -1432,7 +1432,7 @@
             extensions: [".fr"],
             tm_scope: "source.haskell",
             ace_mode: "haskell",
-            language_id: 116
+            language_id: 116,
           },
           "G-code": {
             type: "programming",
@@ -1440,7 +1440,7 @@
             extensions: [".g", ".cnc", ".gco", ".gcode"],
             tm_scope: "source.gcode",
             ace_mode: "gcode",
-            language_id: 117
+            language_id: 117,
           },
           GAML: {
             type: "programming",
@@ -1448,21 +1448,21 @@
             extensions: [".gaml"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 290345951
+            language_id: 290345951,
           },
           GAMS: {
             type: "programming",
             extensions: [".gms"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 118
+            language_id: 118,
           },
           GAP: {
             type: "programming",
             extensions: [".g", ".gap", ".gd", ".gi", ".tst"],
             tm_scope: "source.gap",
             ace_mode: "text",
-            language_id: 119
+            language_id: 119,
           },
           "GCC Machine Description": {
             type: "programming",
@@ -1471,14 +1471,14 @@
             ace_mode: "lisp",
             codemirror_mode: "commonlisp",
             codemirror_mime_type: "text/x-common-lisp",
-            language_id: 121
+            language_id: 121,
           },
           GDB: {
             type: "programming",
             extensions: [".gdb", ".gdbinit"],
             tm_scope: "source.gdb",
             ace_mode: "text",
-            language_id: 122
+            language_id: 122,
           },
           GDScript: {
             type: "programming",
@@ -1486,7 +1486,7 @@
             extensions: [".gd"],
             tm_scope: "source.gdscript",
             ace_mode: "text",
-            language_id: 123
+            language_id: 123,
           },
           GLSL: {
             type: "programming",
@@ -1508,11 +1508,11 @@
               ".vert",
               ".vrx",
               ".vsh",
-              ".vshader"
+              ".vshader",
             ],
             tm_scope: "source.glsl",
             ace_mode: "glsl",
-            language_id: 124
+            language_id: 124,
           },
           GN: {
             type: "data",
@@ -1523,7 +1523,7 @@
             ace_mode: "python",
             codemirror_mode: "python",
             codemirror_mime_type: "text/x-python",
-            language_id: 302957008
+            language_id: 302957008,
           },
           "Game Maker Language": {
             type: "programming",
@@ -1533,7 +1533,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-c++src",
-            language_id: 125
+            language_id: 125,
           },
           Genie: {
             type: "programming",
@@ -1541,7 +1541,7 @@
             extensions: [".gs"],
             color: "#fb855d",
             tm_scope: "none",
-            language_id: 792408528
+            language_id: 792408528,
           },
           Genshi: {
             type: "programming",
@@ -1551,7 +1551,7 @@
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
-            language_id: 126
+            language_id: 126,
           },
           "Gentoo Ebuild": {
             type: "programming",
@@ -1561,7 +1561,7 @@
             ace_mode: "sh",
             codemirror_mode: "shell",
             codemirror_mime_type: "text/x-sh",
-            language_id: 127
+            language_id: 127,
           },
           "Gentoo Eclass": {
             type: "programming",
@@ -1571,7 +1571,7 @@
             ace_mode: "sh",
             codemirror_mode: "shell",
             codemirror_mime_type: "text/x-sh",
-            language_id: 128
+            language_id: 128,
           },
           "Gerber Image": {
             type: "data",
@@ -1589,12 +1589,12 @@
               ".gtl",
               ".gto",
               ".gtp",
-              ".gts"
+              ".gts",
             ],
             interpreters: ["gerbv", "gerbview"],
             tm_scope: "source.gerber",
             ace_mode: "text",
-            language_id: 404627610
+            language_id: 404627610,
           },
           "Gettext Catalog": {
             type: "prose",
@@ -1603,7 +1603,7 @@
             extensions: [".po", ".pot"],
             tm_scope: "source.po",
             ace_mode: "text",
-            language_id: 129
+            language_id: 129,
           },
           Gherkin: {
             type: "programming",
@@ -1612,7 +1612,7 @@
             aliases: ["cucumber"],
             ace_mode: "text",
             color: "#5B2063",
-            language_id: 76
+            language_id: 76,
           },
           "Git Attributes": {
             type: "data",
@@ -1623,7 +1623,7 @@
             ace_mode: "gitignore",
             codemirror_mode: "shell",
             codemirror_mime_type: "text/x-sh",
-            language_id: 956324166
+            language_id: 956324166,
           },
           "Git Config": {
             type: "data",
@@ -1635,7 +1635,7 @@
             codemirror_mode: "properties",
             codemirror_mime_type: "text/x-properties",
             tm_scope: "source.gitconfig",
-            language_id: 807968997
+            language_id: 807968997,
           },
           Glyph: {
             type: "programming",
@@ -1645,14 +1645,14 @@
             ace_mode: "tcl",
             codemirror_mode: "tcl",
             codemirror_mime_type: "text/x-tcl",
-            language_id: 130
+            language_id: 130,
           },
           "Glyph Bitmap Distribution Format": {
             type: "data",
             extensions: [".bdf"],
             tm_scope: "source.bdf",
             ace_mode: "text",
-            language_id: 997665271
+            language_id: 997665271,
           },
           Gnuplot: {
             type: "programming",
@@ -1661,7 +1661,7 @@
             interpreters: ["gnuplot"],
             tm_scope: "source.gnuplot",
             ace_mode: "text",
-            language_id: 131
+            language_id: 131,
           },
           Go: {
             type: "programming",
@@ -1672,7 +1672,7 @@
             ace_mode: "golang",
             codemirror_mode: "go",
             codemirror_mime_type: "text/x-go",
-            language_id: 132
+            language_id: 132,
           },
           Golo: {
             type: "programming",
@@ -1680,7 +1680,7 @@
             extensions: [".golo"],
             tm_scope: "source.golo",
             ace_mode: "text",
-            language_id: 133
+            language_id: 133,
           },
           Gosu: {
             type: "programming",
@@ -1688,21 +1688,21 @@
             extensions: [".gs", ".gst", ".gsx", ".vark"],
             tm_scope: "source.gosu.2",
             ace_mode: "text",
-            language_id: 134
+            language_id: 134,
           },
           Grace: {
             type: "programming",
             extensions: [".grace"],
             tm_scope: "source.grace",
             ace_mode: "text",
-            language_id: 135
+            language_id: 135,
           },
           Gradle: {
             type: "data",
             extensions: [".gradle"],
             tm_scope: "source.groovy.gradle",
             ace_mode: "text",
-            language_id: 136
+            language_id: 136,
           },
           "Grammatical Framework": {
             type: "programming",
@@ -1713,28 +1713,28 @@
             ace_mode: "haskell",
             codemirror_mode: "haskell",
             codemirror_mime_type: "text/x-haskell",
-            language_id: 137
+            language_id: 137,
           },
           "Graph Modeling Language": {
             type: "data",
             extensions: [".gml"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 138
+            language_id: 138,
           },
           GraphQL: {
             type: "data",
             extensions: [".graphql", ".gql", ".graphqls"],
             tm_scope: "source.graphql",
             ace_mode: "text",
-            language_id: 139
+            language_id: 139,
           },
           "Graphviz (DOT)": {
             type: "data",
             tm_scope: "source.dot",
             extensions: [".dot", ".gv"],
             ace_mode: "text",
-            language_id: 140
+            language_id: 140,
           },
           Groovy: {
             type: "programming",
@@ -1746,7 +1746,7 @@
             extensions: [".groovy", ".grt", ".gtpl", ".gvy"],
             interpreters: ["groovy"],
             filenames: ["Jenkinsfile"],
-            language_id: 142
+            language_id: 142,
           },
           "Groovy Server Pages": {
             type: "programming",
@@ -1757,7 +1757,7 @@
             ace_mode: "jsp",
             codemirror_mode: "htmlembedded",
             codemirror_mime_type: "application/x-jsp",
-            language_id: 143
+            language_id: 143,
           },
           HAProxy: {
             type: "data",
@@ -1765,7 +1765,7 @@
             filenames: ["haproxy.cfg"],
             tm_scope: "source.haproxy-config",
             ace_mode: "text",
-            language_id: 366607477
+            language_id: 366607477,
           },
           HCL: {
             type: "programming",
@@ -1775,14 +1775,14 @@
             codemirror_mode: "ruby",
             codemirror_mime_type: "text/x-ruby",
             tm_scope: "source.terraform",
-            language_id: 144
+            language_id: 144,
           },
           HLSL: {
             type: "programming",
             extensions: [".hlsl", ".cginc", ".fx", ".fxh", ".hlsli"],
             ace_mode: "text",
             tm_scope: "source.hlsl",
-            language_id: 145
+            language_id: 145,
           },
           HTML: {
             type: "markup",
@@ -1799,9 +1799,9 @@
               ".inc",
               ".st",
               ".xht",
-              ".xhtml"
+              ".xhtml",
             ],
-            language_id: 146
+            language_id: 146,
           },
           "HTML+Django": {
             type: "markup",
@@ -1814,12 +1814,12 @@
               "html+jinja",
               "htmldjango",
               "njk",
-              "nunjucks"
+              "nunjucks",
             ],
             ace_mode: "django",
             codemirror_mode: "django",
             codemirror_mime_type: "text/x-django",
-            language_id: 147
+            language_id: 147,
           },
           "HTML+ECR": {
             type: "markup",
@@ -1830,7 +1830,7 @@
             ace_mode: "text",
             codemirror_mode: "htmlmixed",
             codemirror_mime_type: "text/html",
-            language_id: 148
+            language_id: 148,
           },
           "HTML+EEX": {
             type: "markup",
@@ -1841,7 +1841,7 @@
             ace_mode: "text",
             codemirror_mode: "htmlmixed",
             codemirror_mime_type: "text/html",
-            language_id: 149
+            language_id: 149,
           },
           "HTML+ERB": {
             type: "markup",
@@ -1852,7 +1852,7 @@
             ace_mode: "text",
             codemirror_mode: "htmlembedded",
             codemirror_mime_type: "application/x-erb",
-            language_id: 150
+            language_id: 150,
           },
           "HTML+PHP": {
             type: "markup",
@@ -1862,7 +1862,7 @@
             ace_mode: "php",
             codemirror_mode: "php",
             codemirror_mime_type: "application/x-httpd-php",
-            language_id: 151
+            language_id: 151,
           },
           "HTML+Razor": {
             type: "markup",
@@ -1873,7 +1873,7 @@
             ace_mode: "razor",
             codemirror_mode: "htmlmixed",
             codemirror_mime_type: "text/html",
-            language_id: 479039817
+            language_id: 479039817,
           },
           HTTP: {
             type: "data",
@@ -1882,14 +1882,14 @@
             ace_mode: "text",
             codemirror_mode: "http",
             codemirror_mime_type: "message/http",
-            language_id: 152
+            language_id: 152,
           },
           HXML: {
             type: "data",
             ace_mode: "text",
             extensions: [".hxml"],
             tm_scope: "source.hxml",
-            language_id: 786683730
+            language_id: 786683730,
           },
           Hack: {
             type: "programming",
@@ -1899,7 +1899,7 @@
             extensions: [".hack", ".hh", ".hhi", ".php"],
             tm_scope: "source.hack",
             color: "#878787",
-            language_id: 153
+            language_id: 153,
           },
           Haml: {
             group: "HTML",
@@ -1909,7 +1909,7 @@
             ace_mode: "haml",
             codemirror_mode: "haml",
             codemirror_mime_type: "text/x-haml",
-            language_id: 154
+            language_id: 154,
           },
           Handlebars: {
             type: "markup",
@@ -1918,7 +1918,7 @@
             extensions: [".handlebars", ".hbs"],
             tm_scope: "text.html.handlebars",
             ace_mode: "handlebars",
-            language_id: 155
+            language_id: 155,
           },
           Harbour: {
             type: "programming",
@@ -1926,7 +1926,7 @@
             extensions: [".hb"],
             tm_scope: "source.harbour",
             ace_mode: "text",
-            language_id: 156
+            language_id: 156,
           },
           Haskell: {
             type: "programming",
@@ -1937,7 +1937,7 @@
             ace_mode: "haskell",
             codemirror_mode: "haskell",
             codemirror_mime_type: "text/x-haskell",
-            language_id: 157
+            language_id: 157,
           },
           Haxe: {
             type: "programming",
@@ -1947,7 +1947,7 @@
             color: "#df7900",
             extensions: [".hx", ".hxsl"],
             tm_scope: "source.hx",
-            language_id: 158
+            language_id: 158,
           },
           HiveQL: {
             type: "programming",
@@ -1955,7 +1955,7 @@
             color: "#dce200",
             tm_scope: "source.hql",
             ace_mode: "sql",
-            language_id: 931814087
+            language_id: 931814087,
           },
           HolyC: {
             type: "programming",
@@ -1965,7 +1965,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csrc",
-            language_id: 928121743
+            language_id: 928121743,
           },
           Hy: {
             type: "programming",
@@ -1975,14 +1975,14 @@
             interpreters: ["hy"],
             aliases: ["hylang"],
             tm_scope: "source.hy",
-            language_id: 159
+            language_id: 159,
           },
           HyPhy: {
             type: "programming",
             ace_mode: "text",
             extensions: [".bf"],
             tm_scope: "none",
-            language_id: 160
+            language_id: 160,
           },
           IDL: {
             type: "programming",
@@ -1992,7 +1992,7 @@
             ace_mode: "text",
             codemirror_mode: "idl",
             codemirror_mime_type: "text/x-idl",
-            language_id: 161
+            language_id: 161,
           },
           "IGOR Pro": {
             type: "programming",
@@ -2001,7 +2001,7 @@
             aliases: ["igor", "igorpro"],
             tm_scope: "source.igor",
             ace_mode: "text",
-            language_id: 162
+            language_id: 162,
           },
           INI: {
             type: "data",
@@ -2011,7 +2011,7 @@
               ".lektorproject",
               ".prefs",
               ".pro",
-              ".properties"
+              ".properties",
             ],
             filenames: ["buildozer.spec"],
             tm_scope: "source.ini",
@@ -2019,7 +2019,7 @@
             ace_mode: "ini",
             codemirror_mode: "properties",
             codemirror_mime_type: "text/x-properties",
-            language_id: 163
+            language_id: 163,
           },
           "IRC log": {
             type: "data",
@@ -2029,7 +2029,7 @@
             ace_mode: "text",
             codemirror_mode: "mirc",
             codemirror_mime_type: "text/mirc",
-            language_id: 164
+            language_id: 164,
           },
           Idris: {
             type: "programming",
@@ -2037,7 +2037,7 @@
             extensions: [".idr", ".lidr"],
             ace_mode: "text",
             tm_scope: "source.idris",
-            language_id: 165
+            language_id: 165,
           },
           "Ignore List": {
             type: "data",
@@ -2059,13 +2059,13 @@
               ".stylelintignore",
               ".vscodeignore",
               "gitignore-global",
-              "gitignore_global"
+              "gitignore_global",
             ],
             ace_mode: "gitignore",
             tm_scope: "source.gitignore",
             codemirror_mode: "shell",
             codemirror_mime_type: "text/x-sh",
-            language_id: 74444240
+            language_id: 74444240,
           },
           "Inform 7": {
             type: "programming",
@@ -2074,14 +2074,14 @@
             tm_scope: "source.inform7",
             aliases: ["i7", "inform7"],
             ace_mode: "text",
-            language_id: 166
+            language_id: 166,
           },
           "Inno Setup": {
             type: "programming",
             extensions: [".iss"],
             tm_scope: "source.inno",
             ace_mode: "text",
-            language_id: 167
+            language_id: 167,
           },
           Io: {
             type: "programming",
@@ -2090,7 +2090,7 @@
             interpreters: ["io"],
             tm_scope: "source.io",
             ace_mode: "io",
-            language_id: 168
+            language_id: 168,
           },
           Ioke: {
             type: "programming",
@@ -2099,7 +2099,7 @@
             interpreters: ["ioke"],
             tm_scope: "source.ioke",
             ace_mode: "text",
-            language_id: 169
+            language_id: 169,
           },
           Isabelle: {
             type: "programming",
@@ -2107,7 +2107,7 @@
             extensions: [".thy"],
             tm_scope: "source.isabelle.theory",
             ace_mode: "text",
-            language_id: 170
+            language_id: 170,
           },
           "Isabelle ROOT": {
             type: "programming",
@@ -2115,7 +2115,7 @@
             filenames: ["ROOT"],
             tm_scope: "source.isabelle.root",
             ace_mode: "text",
-            language_id: 171
+            language_id: 171,
           },
           J: {
             type: "programming",
@@ -2124,7 +2124,7 @@
             interpreters: ["jconsole"],
             tm_scope: "source.j",
             ace_mode: "text",
-            language_id: 172
+            language_id: 172,
           },
           JFlex: {
             type: "programming",
@@ -2132,7 +2132,7 @@
             extensions: [".flex", ".jflex"],
             tm_scope: "source.jflex",
             ace_mode: "text",
-            language_id: 173
+            language_id: 173,
           },
           JSON: {
             type: "data",
@@ -2157,7 +2157,7 @@
               ".webapp",
               ".webmanifest",
               ".yy",
-              ".yyp"
+              ".yyp",
             ],
             filenames: [
               ".arcconfig",
@@ -2166,9 +2166,9 @@
               ".tern-project",
               ".watchmanconfig",
               "composer.lock",
-              "mcmod.info"
+              "mcmod.info",
             ],
-            language_id: 174
+            language_id: 174,
           },
           "JSON with Comments": {
             type: "data",
@@ -2191,7 +2191,7 @@
               ".sublime-theme",
               ".sublime-workspace",
               ".sublime_metrics",
-              ".sublime_session"
+              ".sublime_session",
             ],
             filenames: [
               ".babelrc",
@@ -2201,9 +2201,9 @@
               ".jslintrc",
               "jsconfig.json",
               "language-configuration.json",
-              "tsconfig.json"
+              "tsconfig.json",
             ],
-            language_id: 423
+            language_id: 423,
           },
           JSON5: {
             type: "data",
@@ -2212,7 +2212,7 @@
             ace_mode: "javascript",
             codemirror_mode: "javascript",
             codemirror_mime_type: "application/json",
-            language_id: 175
+            language_id: 175,
           },
           JSONLD: {
             type: "data",
@@ -2221,7 +2221,7 @@
             ace_mode: "javascript",
             codemirror_mode: "javascript",
             codemirror_mime_type: "application/json",
-            language_id: 176
+            language_id: 176,
           },
           JSONiq: {
             color: "#40d47e",
@@ -2231,7 +2231,7 @@
             codemirror_mime_type: "application/json",
             extensions: [".jq"],
             tm_scope: "source.jq",
-            language_id: 177
+            language_id: 177,
           },
           JSX: {
             type: "programming",
@@ -2241,14 +2241,14 @@
             ace_mode: "javascript",
             codemirror_mode: "jsx",
             codemirror_mime_type: "text/jsx",
-            language_id: 178
+            language_id: 178,
           },
           Jasmin: {
             type: "programming",
             ace_mode: "java",
             extensions: [".j"],
             tm_scope: "source.jasmin",
-            language_id: 180
+            language_id: 180,
           },
           Java: {
             type: "programming",
@@ -2258,7 +2258,7 @@
             codemirror_mime_type: "text/x-java",
             color: "#b07219",
             extensions: [".java"],
-            language_id: 181
+            language_id: 181,
           },
           "Java Properties": {
             type: "data",
@@ -2267,7 +2267,7 @@
             ace_mode: "properties",
             codemirror_mode: "properties",
             codemirror_mime_type: "text/x-properties",
-            language_id: 519377561
+            language_id: 519377561,
           },
           "Java Server Pages": {
             type: "programming",
@@ -2278,7 +2278,7 @@
             ace_mode: "jsp",
             codemirror_mode: "htmlembedded",
             codemirror_mime_type: "application/x-jsp",
-            language_id: 182
+            language_id: 182,
           },
           JavaScript: {
             type: "programming",
@@ -2309,7 +2309,7 @@
               ".sjs",
               ".ssjs",
               ".xsjs",
-              ".xsjslib"
+              ".xsjslib",
             ],
             filenames: ["Jakefile"],
             interpreters: [
@@ -2319,9 +2319,9 @@
               "node",
               "rhino",
               "v8",
-              "v8-shell"
+              "v8-shell",
             ],
-            language_id: 183
+            language_id: 183,
           },
           "JavaScript+ERB": {
             type: "programming",
@@ -2331,7 +2331,7 @@
             ace_mode: "javascript",
             codemirror_mode: "javascript",
             codemirror_mime_type: "application/javascript",
-            language_id: 914318960
+            language_id: 914318960,
           },
           Jison: {
             type: "programming",
@@ -2339,7 +2339,7 @@
             extensions: [".jison"],
             tm_scope: "source.jison",
             ace_mode: "text",
-            language_id: 284531423
+            language_id: 284531423,
           },
           "Jison Lex": {
             type: "programming",
@@ -2347,7 +2347,7 @@
             extensions: [".jisonlex"],
             tm_scope: "source.jisonlex",
             ace_mode: "text",
-            language_id: 406395330
+            language_id: 406395330,
           },
           Jolie: {
             type: "programming",
@@ -2356,7 +2356,7 @@
             color: "#843179",
             ace_mode: "text",
             tm_scope: "source.jolie",
-            language_id: 998078858
+            language_id: 998078858,
           },
           Jsonnet: {
             color: "#0064bd",
@@ -2364,7 +2364,7 @@
             ace_mode: "text",
             extensions: [".jsonnet", ".libsonnet"],
             tm_scope: "source.jsonnet",
-            language_id: 664885656
+            language_id: 664885656,
           },
           Julia: {
             type: "programming",
@@ -2375,7 +2375,7 @@
             ace_mode: "julia",
             codemirror_mode: "julia",
             codemirror_mime_type: "text/x-julia",
-            language_id: 184
+            language_id: 184,
           },
           "Jupyter Notebook": {
             type: "markup",
@@ -2387,7 +2387,7 @@
             extensions: [".ipynb"],
             filenames: ["Notebook"],
             aliases: ["IPython Notebook"],
-            language_id: 185
+            language_id: 185,
           },
           KRL: {
             type: "programming",
@@ -2395,7 +2395,7 @@
             extensions: [".krl"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 186
+            language_id: 186,
           },
           "KiCad Layout": {
             type: "data",
@@ -2406,14 +2406,14 @@
             ace_mode: "lisp",
             codemirror_mode: "commonlisp",
             codemirror_mime_type: "text/x-common-lisp",
-            language_id: 187
+            language_id: 187,
           },
           "KiCad Legacy Layout": {
             type: "data",
             extensions: [".brd"],
             tm_scope: "source.pcb.board",
             ace_mode: "text",
-            language_id: 140848857
+            language_id: 140848857,
           },
           "KiCad Schematic": {
             type: "data",
@@ -2421,7 +2421,7 @@
             extensions: [".sch"],
             tm_scope: "source.pcb.schematic",
             ace_mode: "text",
-            language_id: 622447435
+            language_id: 622447435,
           },
           Kit: {
             type: "markup",
@@ -2430,7 +2430,7 @@
             codemirror_mime_type: "text/html",
             extensions: [".kit"],
             tm_scope: "text.html.basic",
-            language_id: 188
+            language_id: 188,
           },
           Kotlin: {
             type: "programming",
@@ -2440,7 +2440,7 @@
             ace_mode: "text",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-kotlin",
-            language_id: 189
+            language_id: 189,
           },
           LFE: {
             type: "programming",
@@ -2450,7 +2450,7 @@
             ace_mode: "lisp",
             codemirror_mode: "commonlisp",
             codemirror_mime_type: "text/x-common-lisp",
-            language_id: 190
+            language_id: 190,
           },
           LLVM: {
             type: "programming",
@@ -2458,7 +2458,7 @@
             tm_scope: "source.llvm",
             ace_mode: "text",
             color: "#185619",
-            language_id: 191
+            language_id: 191,
           },
           LOLCODE: {
             type: "programming",
@@ -2466,7 +2466,7 @@
             color: "#cc9900",
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 192
+            language_id: 192,
           },
           LSL: {
             type: "programming",
@@ -2475,7 +2475,7 @@
             extensions: [".lsl", ".lslp"],
             interpreters: ["lsl"],
             color: "#3d9970",
-            language_id: 193
+            language_id: 193,
           },
           "LTspice Symbol": {
             type: "data",
@@ -2484,7 +2484,7 @@
             ace_mode: "text",
             codemirror_mode: "spreadsheet",
             codemirror_mime_type: "text/x-spreadsheet",
-            language_id: 1013566805
+            language_id: 1013566805,
           },
           LabVIEW: {
             type: "programming",
@@ -2493,7 +2493,7 @@
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
-            language_id: 194
+            language_id: 194,
           },
           Lasso: {
             type: "programming",
@@ -2502,7 +2502,7 @@
             tm_scope: "file.lasso",
             aliases: ["lassoscript"],
             ace_mode: "text",
-            language_id: 195
+            language_id: 195,
           },
           Latte: {
             type: "markup",
@@ -2512,14 +2512,14 @@
             ace_mode: "smarty",
             codemirror_mode: "smarty",
             codemirror_mime_type: "text/x-smarty",
-            language_id: 196
+            language_id: 196,
           },
           Lean: {
             type: "programming",
             extensions: [".lean", ".hlean"],
             tm_scope: "source.lean",
             ace_mode: "text",
-            language_id: 197
+            language_id: 197,
           },
           Less: {
             type: "markup",
@@ -2529,7 +2529,7 @@
             ace_mode: "less",
             codemirror_mode: "css",
             codemirror_mime_type: "text/css",
-            language_id: 198
+            language_id: 198,
           },
           Lex: {
             type: "programming",
@@ -2538,21 +2538,21 @@
             extensions: [".l", ".lex"],
             tm_scope: "source.lex",
             ace_mode: "text",
-            language_id: 199
+            language_id: 199,
           },
           LilyPond: {
             type: "programming",
             extensions: [".ly", ".ily"],
             tm_scope: "source.lilypond",
             ace_mode: "text",
-            language_id: 200
+            language_id: 200,
           },
           Limbo: {
             type: "programming",
             extensions: [".b", ".m"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 201
+            language_id: 201,
           },
           "Linker Script": {
             type: "data",
@@ -2560,21 +2560,21 @@
             filenames: ["ld.script"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 202
+            language_id: 202,
           },
           "Linux Kernel Module": {
             type: "data",
             extensions: [".mod"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 203
+            language_id: 203,
           },
           Liquid: {
             type: "markup",
             extensions: [".liquid"],
             tm_scope: "text.html.liquid",
             ace_mode: "liquid",
-            language_id: 204
+            language_id: 204,
           },
           "Literate Agda": {
             type: "programming",
@@ -2582,7 +2582,7 @@
             extensions: [".lagda"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 205
+            language_id: 205,
           },
           "Literate CoffeeScript": {
             type: "programming",
@@ -2592,7 +2592,7 @@
             wrap: true,
             aliases: ["litcoffee"],
             extensions: [".litcoffee"],
-            language_id: 206
+            language_id: 206,
           },
           "Literate Haskell": {
             type: "programming",
@@ -2603,7 +2603,7 @@
             ace_mode: "text",
             codemirror_mode: "haskell-literate",
             codemirror_mime_type: "text/x-literate-haskell",
-            language_id: 207
+            language_id: 207,
           },
           LiveScript: {
             type: "programming",
@@ -2615,21 +2615,21 @@
             ace_mode: "livescript",
             codemirror_mode: "livescript",
             codemirror_mime_type: "text/x-livescript",
-            language_id: 208
+            language_id: 208,
           },
           Logos: {
             type: "programming",
             extensions: [".xm", ".x", ".xi"],
             ace_mode: "text",
             tm_scope: "source.logos",
-            language_id: 209
+            language_id: 209,
           },
           Logtalk: {
             type: "programming",
             extensions: [".lgt", ".logtalk"],
             tm_scope: "source.logtalk",
             ace_mode: "text",
-            language_id: 210
+            language_id: 210,
           },
           LookML: {
             type: "programming",
@@ -2639,14 +2639,14 @@
             color: "#652B81",
             extensions: [".lookml", ".model.lkml", ".view.lkml"],
             tm_scope: "source.yaml",
-            language_id: 211
+            language_id: 211,
           },
           LoomScript: {
             type: "programming",
             extensions: [".ls"],
             tm_scope: "source.loomscript",
             ace_mode: "text",
-            language_id: 212
+            language_id: 212,
           },
           Lua: {
             type: "programming",
@@ -2662,10 +2662,10 @@
               ".p8",
               ".pd_lua",
               ".rbxs",
-              ".wlua"
+              ".wlua",
             ],
             interpreters: ["lua"],
-            language_id: 213
+            language_id: 213,
           },
           M: {
             type: "programming",
@@ -2675,14 +2675,14 @@
             codemirror_mode: "mumps",
             codemirror_mime_type: "text/x-mumps",
             language_id: 214,
-            tm_scope: "none"
+            tm_scope: "none",
           },
           M4: {
             type: "programming",
             extensions: [".m4"],
             tm_scope: "source.m4",
             ace_mode: "text",
-            language_id: 215
+            language_id: 215,
           },
           M4Sugar: {
             type: "programming",
@@ -2692,7 +2692,7 @@
             filenames: ["configure.ac"],
             tm_scope: "source.m4",
             ace_mode: "text",
-            language_id: 216
+            language_id: 216,
           },
           MATLAB: {
             type: "programming",
@@ -2703,7 +2703,7 @@
             ace_mode: "matlab",
             codemirror_mode: "octave",
             codemirror_mime_type: "text/x-octave",
-            language_id: 225
+            language_id: 225,
           },
           MAXScript: {
             type: "programming",
@@ -2711,7 +2711,7 @@
             extensions: [".ms", ".mcr"],
             tm_scope: "source.maxscript",
             ace_mode: "text",
-            language_id: 217
+            language_id: 217,
           },
           MLIR: {
             type: "programming",
@@ -2719,7 +2719,7 @@
             extensions: [".mlir"],
             tm_scope: "source.mlir",
             ace_mode: "text",
-            language_id: 448253929
+            language_id: 448253929,
           },
           MQL4: {
             type: "programming",
@@ -2727,7 +2727,7 @@
             extensions: [".mq4", ".mqh"],
             tm_scope: "source.mql5",
             ace_mode: "c_cpp",
-            language_id: 426
+            language_id: 426,
           },
           MQL5: {
             type: "programming",
@@ -2735,7 +2735,7 @@
             extensions: [".mq5", ".mqh"],
             tm_scope: "source.mql5",
             ace_mode: "c_cpp",
-            language_id: 427
+            language_id: 427,
           },
           MTML: {
             type: "markup",
@@ -2745,7 +2745,7 @@
             ace_mode: "html",
             codemirror_mode: "htmlmixed",
             codemirror_mime_type: "text/html",
-            language_id: 218
+            language_id: 218,
           },
           MUF: {
             type: "programming",
@@ -2755,7 +2755,7 @@
             ace_mode: "forth",
             codemirror_mode: "forth",
             codemirror_mime_type: "text/x-forth",
-            language_id: 219
+            language_id: 219,
           },
           Makefile: {
             type: "programming",
@@ -2775,21 +2775,21 @@
               "Makefile.wat",
               "makefile",
               "makefile.sco",
-              "mkfile"
+              "mkfile",
             ],
             interpreters: ["make"],
             tm_scope: "source.makefile",
             ace_mode: "makefile",
             codemirror_mode: "cmake",
             codemirror_mime_type: "text/x-cmake",
-            language_id: 220
+            language_id: 220,
           },
           Mako: {
             type: "programming",
             extensions: [".mako", ".mao"],
             tm_scope: "text.html.mako",
             ace_mode: "text",
-            language_id: 221
+            language_id: 221,
           },
           Markdown: {
             type: "prose",
@@ -2808,11 +2808,11 @@
               ".mkdn",
               ".mkdown",
               ".ronn",
-              ".workbook"
+              ".workbook",
             ],
             filenames: ["contents.lr"],
             tm_scope: "source.gfm",
-            language_id: 222
+            language_id: 222,
           },
           Marko: {
             group: "HTML",
@@ -2823,7 +2823,7 @@
             ace_mode: "text",
             codemirror_mode: "htmlmixed",
             codemirror_mime_type: "text/html",
-            language_id: 932782397
+            language_id: 932782397,
           },
           Mask: {
             type: "markup",
@@ -2831,7 +2831,7 @@
             ace_mode: "mask",
             extensions: [".mask"],
             tm_scope: "source.mask",
-            language_id: 223
+            language_id: 223,
           },
           Mathematica: {
             type: "programming",
@@ -2844,14 +2844,14 @@
               ".nb",
               ".nbp",
               ".wl",
-              ".wlt"
+              ".wlt",
             ],
             aliases: ["mma"],
             tm_scope: "source.mathematica",
             ace_mode: "text",
             codemirror_mode: "mathematica",
             codemirror_mime_type: "text/x-mathematica",
-            language_id: 224
+            language_id: 224,
           },
           "Maven POM": {
             type: "data",
@@ -2860,7 +2860,7 @@
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
-            language_id: 226
+            language_id: 226,
           },
           Max: {
             type: "programming",
@@ -2871,7 +2871,7 @@
             ace_mode: "json",
             codemirror_mode: "javascript",
             codemirror_mime_type: "application/json",
-            language_id: 227
+            language_id: 227,
           },
           MediaWiki: {
             type: "prose",
@@ -2879,7 +2879,7 @@
             extensions: [".mediawiki", ".wiki"],
             tm_scope: "text.html.mediawiki",
             ace_mode: "text",
-            language_id: 228
+            language_id: 228,
           },
           Mercury: {
             type: "programming",
@@ -2888,7 +2888,7 @@
             interpreters: ["mmi"],
             extensions: [".m", ".moo"],
             tm_scope: "source.mercury",
-            language_id: 229
+            language_id: 229,
           },
           Meson: {
             type: "programming",
@@ -2896,7 +2896,7 @@
             filenames: ["meson.build", "meson_options.txt"],
             tm_scope: "source.meson",
             ace_mode: "text",
-            language_id: 799141244
+            language_id: 799141244,
           },
           Metal: {
             type: "programming",
@@ -2906,7 +2906,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-c++src",
-            language_id: 230
+            language_id: 230,
           },
           MiniD: {
             type: "programming",
@@ -2914,7 +2914,7 @@
             extensions: [".minid"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 231
+            language_id: 231,
           },
           Mirah: {
             type: "programming",
@@ -2924,7 +2924,7 @@
             ace_mode: "ruby",
             codemirror_mode: "ruby",
             codemirror_mime_type: "text/x-ruby",
-            language_id: 232
+            language_id: 232,
           },
           Modelica: {
             type: "programming",
@@ -2933,14 +2933,14 @@
             ace_mode: "text",
             codemirror_mode: "modelica",
             codemirror_mime_type: "text/x-modelica",
-            language_id: 233
+            language_id: 233,
           },
           "Modula-2": {
             type: "programming",
             extensions: [".mod"],
             tm_scope: "source.modula2",
             ace_mode: "text",
-            language_id: 234
+            language_id: 234,
           },
           "Modula-3": {
             type: "programming",
@@ -2948,7 +2948,7 @@
             color: "#223388",
             ace_mode: "text",
             tm_scope: "source.modula-3",
-            language_id: 564743864
+            language_id: 564743864,
           },
           "Module Management System": {
             type: "programming",
@@ -2956,21 +2956,21 @@
             filenames: ["descrip.mmk", "descrip.mms"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 235
+            language_id: 235,
           },
           Monkey: {
             type: "programming",
             extensions: [".monkey", ".monkey2"],
             ace_mode: "text",
             tm_scope: "source.monkey",
-            language_id: 236
+            language_id: 236,
           },
           Moocode: {
             type: "programming",
             extensions: [".moo"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 237
+            language_id: 237,
           },
           MoonScript: {
             type: "programming",
@@ -2978,7 +2978,7 @@
             interpreters: ["moon"],
             tm_scope: "source.moonscript",
             ace_mode: "text",
-            language_id: 238
+            language_id: 238,
           },
           "Motorola 68K Assembly": {
             type: "programming",
@@ -2987,7 +2987,7 @@
             extensions: [".X68"],
             tm_scope: "source.m68k",
             ace_mode: "assembly_x86",
-            language_id: 477582706
+            language_id: 477582706,
           },
           Muse: {
             type: "prose",
@@ -2996,14 +2996,14 @@
             ace_mode: "text",
             wrap: true,
             language_id: 474864066,
-            aliases: ["amusewiki", "emacs muse"]
+            aliases: ["amusewiki", "emacs muse"],
           },
           Myghty: {
             type: "programming",
             extensions: [".myt"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 239
+            language_id: 239,
           },
           NCL: {
             type: "programming",
@@ -3011,14 +3011,14 @@
             extensions: [".ncl"],
             tm_scope: "source.ncl",
             ace_mode: "text",
-            language_id: 240
+            language_id: 240,
           },
           NL: {
             type: "data",
             extensions: [".nl"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 241
+            language_id: 241,
           },
           "NPM Config": {
             type: "data",
@@ -3027,7 +3027,7 @@
             filenames: [".npmrc"],
             tm_scope: "source.ini.npmrc",
             ace_mode: "text",
-            language_id: 685022663
+            language_id: 685022663,
           },
           NSIS: {
             type: "programming",
@@ -3036,7 +3036,7 @@
             ace_mode: "text",
             codemirror_mode: "nsis",
             codemirror_mime_type: "text/x-nsis",
-            language_id: 242
+            language_id: 242,
           },
           Nearley: {
             type: "programming",
@@ -3044,7 +3044,7 @@
             color: "#990000",
             extensions: [".ne", ".nearley"],
             tm_scope: "source.ne",
-            language_id: 521429430
+            language_id: 521429430,
           },
           Nemerle: {
             type: "programming",
@@ -3052,7 +3052,7 @@
             extensions: [".n"],
             tm_scope: "source.nemerle",
             ace_mode: "text",
-            language_id: 243
+            language_id: 243,
           },
           NetLinx: {
             type: "programming",
@@ -3060,7 +3060,7 @@
             extensions: [".axs", ".axi"],
             tm_scope: "source.netlinx",
             ace_mode: "text",
-            language_id: 244
+            language_id: 244,
           },
           "NetLinx+ERB": {
             type: "programming",
@@ -3068,7 +3068,7 @@
             extensions: [".axs.erb", ".axi.erb"],
             tm_scope: "source.netlinx.erb",
             ace_mode: "text",
-            language_id: 245
+            language_id: 245,
           },
           NetLogo: {
             type: "programming",
@@ -3078,7 +3078,7 @@
             ace_mode: "lisp",
             codemirror_mode: "commonlisp",
             codemirror_mime_type: "text/x-common-lisp",
-            language_id: 246
+            language_id: 246,
           },
           NewLisp: {
             type: "programming",
@@ -3089,7 +3089,7 @@
             ace_mode: "lisp",
             codemirror_mode: "commonlisp",
             codemirror_mime_type: "text/x-common-lisp",
-            language_id: 247
+            language_id: 247,
           },
           Nextflow: {
             type: "programming",
@@ -3099,7 +3099,7 @@
             extensions: [".nf"],
             filenames: ["nextflow.config"],
             interpreters: ["nextflow"],
-            language_id: 506780613
+            language_id: 506780613,
           },
           Nginx: {
             type: "data",
@@ -3110,7 +3110,7 @@
             ace_mode: "text",
             codemirror_mode: "nginx",
             codemirror_mime_type: "text/x-nginx-conf",
-            language_id: 248
+            language_id: 248,
           },
           Nim: {
             type: "programming",
@@ -3119,14 +3119,14 @@
             filenames: ["nim.cfg"],
             ace_mode: "text",
             tm_scope: "source.nim",
-            language_id: 249
+            language_id: 249,
           },
           Ninja: {
             type: "data",
             tm_scope: "source.ninja",
             extensions: [".ninja"],
             ace_mode: "text",
-            language_id: 250
+            language_id: 250,
           },
           Nit: {
             type: "programming",
@@ -3134,7 +3134,7 @@
             extensions: [".nit"],
             tm_scope: "source.nit",
             ace_mode: "text",
-            language_id: 251
+            language_id: 251,
           },
           Nix: {
             type: "programming",
@@ -3143,7 +3143,7 @@
             aliases: ["nixos"],
             tm_scope: "source.nix",
             ace_mode: "nix",
-            language_id: 252
+            language_id: 252,
           },
           Nu: {
             type: "programming",
@@ -3156,7 +3156,7 @@
             codemirror_mode: "scheme",
             codemirror_mime_type: "text/x-scheme",
             interpreters: ["nush"],
-            language_id: 253
+            language_id: 253,
           },
           NumPy: {
             type: "programming",
@@ -3166,7 +3166,7 @@
             ace_mode: "text",
             codemirror_mode: "python",
             codemirror_mime_type: "text/x-python",
-            language_id: 254
+            language_id: 254,
           },
           OCaml: {
             type: "programming",
@@ -3181,18 +3181,18 @@
               ".ml4",
               ".mli",
               ".mll",
-              ".mly"
+              ".mly",
             ],
             interpreters: ["ocaml", "ocamlrun", "ocamlscript"],
             tm_scope: "source.ocaml",
-            language_id: 255
+            language_id: 255,
           },
           ObjDump: {
             type: "data",
             extensions: [".objdump"],
             tm_scope: "objdump.x86asm",
             ace_mode: "assembly_x86",
-            language_id: 256
+            language_id: 256,
           },
           ObjectScript: {
             type: "programming",
@@ -3200,7 +3200,7 @@
             language_id: 202735509,
             tm_scope: "source.objectscript",
             color: "#424893",
-            ace_mode: "text"
+            ace_mode: "text",
           },
           "Objective-C": {
             type: "programming",
@@ -3211,7 +3211,7 @@
             ace_mode: "objectivec",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-objectivec",
-            language_id: 257
+            language_id: 257,
           },
           "Objective-C++": {
             type: "programming",
@@ -3222,7 +3222,7 @@
             ace_mode: "objectivec",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-objectivec",
-            language_id: 258
+            language_id: 258,
           },
           "Objective-J": {
             type: "programming",
@@ -3231,7 +3231,7 @@
             extensions: [".j", ".sj"],
             tm_scope: "source.js.objj",
             ace_mode: "text",
-            language_id: 259
+            language_id: 259,
           },
           Omgrofl: {
             type: "programming",
@@ -3239,14 +3239,14 @@
             color: "#cabbff",
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 260
+            language_id: 260,
           },
           Opa: {
             type: "programming",
             extensions: [".opa"],
             tm_scope: "source.opa",
             ace_mode: "text",
-            language_id: 261
+            language_id: 261,
           },
           Opal: {
             type: "programming",
@@ -3254,14 +3254,14 @@
             extensions: [".opal"],
             tm_scope: "source.opal",
             ace_mode: "text",
-            language_id: 262
+            language_id: 262,
           },
           "Open Policy Agent": {
             type: "programming",
             ace_mode: "text",
             extensions: [".rego"],
             language_id: 840483232,
-            tm_scope: "source.rego"
+            tm_scope: "source.rego",
           },
           OpenCL: {
             type: "programming",
@@ -3271,7 +3271,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csrc",
-            language_id: 263
+            language_id: 263,
           },
           "OpenEdge ABL": {
             type: "programming",
@@ -3279,7 +3279,7 @@
             extensions: [".p", ".cls", ".w"],
             tm_scope: "source.abl",
             ace_mode: "text",
-            language_id: 264
+            language_id: 264,
           },
           "OpenRC runscript": {
             type: "programming",
@@ -3290,21 +3290,21 @@
             ace_mode: "sh",
             codemirror_mode: "shell",
             codemirror_mime_type: "text/x-sh",
-            language_id: 265
+            language_id: 265,
           },
           OpenSCAD: {
             type: "programming",
             extensions: [".scad"],
             tm_scope: "source.scad",
             ace_mode: "scad",
-            language_id: 266
+            language_id: 266,
           },
           "OpenStep Property List": {
             type: "data",
             extensions: [".plist"],
             tm_scope: "source.plist",
             ace_mode: "text",
-            language_id: 598917541
+            language_id: 598917541,
           },
           "OpenType Feature File": {
             type: "data",
@@ -3312,7 +3312,7 @@
             extensions: [".fea"],
             tm_scope: "source.opentype",
             ace_mode: "text",
-            language_id: 374317347
+            language_id: 374317347,
           },
           Org: {
             type: "prose",
@@ -3320,14 +3320,14 @@
             extensions: [".org"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 267
+            language_id: 267,
           },
           Ox: {
             type: "programming",
             extensions: [".ox", ".oxh", ".oxo"],
             tm_scope: "source.ox",
             ace_mode: "text",
-            language_id: 268
+            language_id: 268,
           },
           Oxygene: {
             type: "programming",
@@ -3335,7 +3335,7 @@
             extensions: [".oxygene"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 269
+            language_id: 269,
           },
           Oz: {
             type: "programming",
@@ -3345,7 +3345,7 @@
             ace_mode: "text",
             codemirror_mode: "oz",
             codemirror_mime_type: "text/x-oz",
-            language_id: 270
+            language_id: 270,
           },
           P4: {
             type: "programming",
@@ -3353,7 +3353,7 @@
             extensions: [".p4"],
             tm_scope: "source.p4",
             ace_mode: "text",
-            language_id: 348895984
+            language_id: 348895984,
           },
           PHP: {
             type: "programming",
@@ -3372,12 +3372,12 @@
               ".php4",
               ".php5",
               ".phps",
-              ".phpt"
+              ".phpt",
             ],
             filenames: [".php", ".php_cs", ".php_cs.dist", "Phakefile"],
             interpreters: ["php"],
             aliases: ["inc"],
-            language_id: 272
+            language_id: 272,
           },
           PLSQL: {
             type: "programming",
@@ -3402,9 +3402,9 @@
               ".tpb",
               ".tps",
               ".trg",
-              ".vw"
+              ".vw",
             ],
-            language_id: 273
+            language_id: 273,
           },
           PLpgSQL: {
             type: "programming",
@@ -3413,7 +3413,7 @@
             codemirror_mime_type: "text/x-sql",
             tm_scope: "source.sql",
             extensions: [".pgsql", ".sql"],
-            language_id: 274
+            language_id: 274,
           },
           "POV-Ray SDL": {
             type: "programming",
@@ -3421,7 +3421,7 @@
             extensions: [".pov", ".inc"],
             tm_scope: "source.pov-ray sdl",
             ace_mode: "text",
-            language_id: 275
+            language_id: 275,
           },
           Pan: {
             type: "programming",
@@ -3429,7 +3429,7 @@
             extensions: [".pan"],
             tm_scope: "source.pan",
             ace_mode: "text",
-            language_id: 276
+            language_id: 276,
           },
           Papyrus: {
             type: "programming",
@@ -3437,7 +3437,7 @@
             extensions: [".psc"],
             tm_scope: "source.papyrus.skyrim",
             ace_mode: "text",
-            language_id: 277
+            language_id: 277,
           },
           Parrot: {
             type: "programming",
@@ -3445,7 +3445,7 @@
             extensions: [".parrot"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 278
+            language_id: 278,
           },
           "Parrot Assembly": {
             group: "Parrot",
@@ -3455,7 +3455,7 @@
             interpreters: ["parrot"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 279
+            language_id: 279,
           },
           "Parrot Internal Representation": {
             group: "Parrot",
@@ -3465,7 +3465,7 @@
             extensions: [".pir"],
             interpreters: ["parrot"],
             ace_mode: "text",
-            language_id: 280
+            language_id: 280,
           },
           Pascal: {
             type: "programming",
@@ -3477,14 +3477,14 @@
               ".inc",
               ".lpr",
               ".pascal",
-              ".pp"
+              ".pp",
             ],
             interpreters: ["instantfpc"],
             tm_scope: "source.pascal",
             ace_mode: "pascal",
             codemirror_mode: "pascal",
             codemirror_mime_type: "text/x-pascal",
-            language_id: 281
+            language_id: 281,
           },
           Pawn: {
             type: "programming",
@@ -3492,7 +3492,7 @@
             extensions: [".pwn", ".inc", ".sma"],
             tm_scope: "source.pawn",
             ace_mode: "text",
-            language_id: 271
+            language_id: 271,
           },
           Pep8: {
             type: "programming",
@@ -3500,7 +3500,7 @@
             extensions: [".pep"],
             ace_mode: "text",
             tm_scope: "source.pep8",
-            language_id: 840372442
+            language_id: 840372442,
           },
           Perl: {
             type: "programming",
@@ -3519,12 +3519,12 @@
               ".plx",
               ".pm",
               ".psgi",
-              ".t"
+              ".t",
             ],
             filenames: ["Makefile.PL", "Rexfile", "ack", "cpanfile"],
             interpreters: ["cperl", "perl"],
             aliases: ["cperl"],
-            language_id: 282
+            language_id: 282,
           },
           "Perl 6": {
             type: "programming",
@@ -3540,7 +3540,7 @@
               ".pl6",
               ".pm",
               ".pm6",
-              ".t"
+              ".t",
             ],
             interpreters: ["perl6"],
             aliases: ["perl6"],
@@ -3548,7 +3548,7 @@
             ace_mode: "perl",
             codemirror_mode: "perl",
             codemirror_mime_type: "text/x-perl",
-            language_id: 283
+            language_id: 283,
           },
           Pic: {
             type: "markup",
@@ -3558,14 +3558,14 @@
             ace_mode: "text",
             codemirror_mode: "troff",
             codemirror_mime_type: "text/troff",
-            language_id: 425
+            language_id: 425,
           },
           Pickle: {
             type: "data",
             extensions: [".pkl"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 284
+            language_id: 284,
           },
           PicoLisp: {
             type: "programming",
@@ -3573,7 +3573,7 @@
             interpreters: ["picolisp", "pil"],
             tm_scope: "source.lisp",
             ace_mode: "lisp",
-            language_id: 285
+            language_id: 285,
           },
           PigLatin: {
             type: "programming",
@@ -3581,7 +3581,7 @@
             extensions: [".pig"],
             tm_scope: "source.pig_latin",
             ace_mode: "text",
-            language_id: 286
+            language_id: 286,
           },
           Pike: {
             type: "programming",
@@ -3590,7 +3590,7 @@
             interpreters: ["pike"],
             tm_scope: "source.pike",
             ace_mode: "text",
-            language_id: 287
+            language_id: 287,
           },
           Pod: {
             type: "prose",
@@ -3601,7 +3601,7 @@
             extensions: [".pod"],
             interpreters: ["perl"],
             tm_scope: "none",
-            language_id: 288
+            language_id: 288,
           },
           "Pod 6": {
             type: "prose",
@@ -3610,7 +3610,7 @@
             wrap: true,
             extensions: [".pod", ".pod6"],
             interpreters: ["perl6"],
-            language_id: 155357471
+            language_id: 155357471,
           },
           PogoScript: {
             type: "programming",
@@ -3618,14 +3618,14 @@
             extensions: [".pogo"],
             tm_scope: "source.pogoscript",
             ace_mode: "text",
-            language_id: 289
+            language_id: 289,
           },
           Pony: {
             type: "programming",
             extensions: [".pony"],
             tm_scope: "source.pony",
             ace_mode: "text",
-            language_id: 290
+            language_id: 290,
           },
           PostCSS: {
             type: "markup",
@@ -3633,7 +3633,7 @@
             group: "CSS",
             extensions: [".pcss"],
             ace_mode: "text",
-            language_id: 262764437
+            language_id: 262764437,
           },
           PostScript: {
             type: "markup",
@@ -3642,7 +3642,7 @@
             tm_scope: "source.postscript",
             aliases: ["postscr"],
             ace_mode: "text",
-            language_id: 291
+            language_id: 291,
           },
           PowerBuilder: {
             type: "programming",
@@ -3650,7 +3650,7 @@
             extensions: [".pbt", ".sra", ".sru", ".srw"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 292
+            language_id: 292,
           },
           PowerShell: {
             type: "programming",
@@ -3662,14 +3662,14 @@
             aliases: ["posh", "pwsh"],
             extensions: [".ps1", ".psd1", ".psm1"],
             interpreters: ["pwsh"],
-            language_id: 293
+            language_id: 293,
           },
           Prisma: {
             type: "data",
             extensions: [".prisma"],
             tm_scope: "source.prisma",
             ace_mode: "text",
-            language_id: 499933428
+            language_id: 499933428,
           },
           Processing: {
             type: "programming",
@@ -3677,14 +3677,14 @@
             extensions: [".pde"],
             tm_scope: "source.processing",
             ace_mode: "text",
-            language_id: 294
+            language_id: 294,
           },
           Proguard: {
             type: "data",
             extensions: [".pro"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 716513858
+            language_id: 716513858,
           },
           Prolog: {
             type: "programming",
@@ -3693,7 +3693,7 @@
             interpreters: ["swipl", "yap"],
             tm_scope: "source.prolog",
             ace_mode: "prolog",
-            language_id: 295
+            language_id: 295,
           },
           "Propeller Spin": {
             type: "programming",
@@ -3701,7 +3701,7 @@
             extensions: [".spin"],
             tm_scope: "source.spin",
             ace_mode: "text",
-            language_id: 296
+            language_id: 296,
           },
           "Protocol Buffer": {
             type: "data",
@@ -3711,7 +3711,7 @@
             ace_mode: "protobuf",
             codemirror_mode: "protobuf",
             codemirror_mime_type: "text/x-protobuf",
-            language_id: 297
+            language_id: 297,
           },
           "Public Key": {
             type: "data",
@@ -3720,7 +3720,7 @@
             ace_mode: "text",
             codemirror_mode: "asciiarmor",
             codemirror_mime_type: "application/pgp",
-            language_id: 298
+            language_id: 298,
           },
           Pug: {
             group: "HTML",
@@ -3730,7 +3730,7 @@
             ace_mode: "jade",
             codemirror_mode: "pug",
             codemirror_mime_type: "text/x-pug",
-            language_id: 179
+            language_id: 179,
           },
           Puppet: {
             type: "programming",
@@ -3741,14 +3741,14 @@
             codemirror_mode: "puppet",
             codemirror_mime_type: "text/x-puppet",
             tm_scope: "source.puppet",
-            language_id: 299
+            language_id: 299,
           },
           "Pure Data": {
             type: "data",
             extensions: [".pd"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 300
+            language_id: 300,
           },
           PureBasic: {
             type: "programming",
@@ -3756,7 +3756,7 @@
             extensions: [".pb", ".pbi"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 301
+            language_id: 301,
           },
           PureScript: {
             type: "programming",
@@ -3766,7 +3766,7 @@
             ace_mode: "haskell",
             codemirror_mode: "haskell",
             codemirror_mime_type: "text/x-haskell",
-            language_id: 302
+            language_id: 302,
           },
           Python: {
             type: "programming",
@@ -3793,7 +3793,7 @@
               ".spec",
               ".tac",
               ".wsgi",
-              ".xpy"
+              ".xpy",
             ],
             filenames: [
               ".gclient",
@@ -3805,11 +3805,11 @@
               "SConstruct",
               "Snakefile",
               "WORKSPACE",
-              "wscript"
+              "wscript",
             ],
             interpreters: ["python", "python2", "python3"],
             aliases: ["bazel", "bzl", "rusthon", "starlark", "python3"],
-            language_id: 303
+            language_id: 303,
           },
           "Python console": {
             type: "programming",
@@ -3818,7 +3818,7 @@
             aliases: ["pycon"],
             tm_scope: "text.python.console",
             ace_mode: "text",
-            language_id: 428
+            language_id: 428,
           },
           "Python traceback": {
             type: "data",
@@ -3827,7 +3827,7 @@
             extensions: [".pytb"],
             tm_scope: "text.python.traceback",
             ace_mode: "text",
-            language_id: 304
+            language_id: 304,
           },
           QML: {
             type: "programming",
@@ -3835,7 +3835,7 @@
             extensions: [".qml", ".qbs"],
             tm_scope: "source.qml",
             ace_mode: "text",
-            language_id: 305
+            language_id: 305,
           },
           QMake: {
             type: "programming",
@@ -3843,7 +3843,7 @@
             interpreters: ["qmake"],
             tm_scope: "source.qmake",
             ace_mode: "text",
-            language_id: 306
+            language_id: 306,
           },
           Quake: {
             type: "programming",
@@ -3851,7 +3851,7 @@
             color: "#882233",
             ace_mode: "text",
             tm_scope: "source.quake",
-            language_id: 375265331
+            language_id: 375265331,
           },
           R: {
             type: "programming",
@@ -3864,7 +3864,7 @@
             ace_mode: "r",
             codemirror_mode: "r",
             codemirror_mime_type: "text/x-rsrc",
-            language_id: 307
+            language_id: 307,
           },
           RAML: {
             type: "markup",
@@ -3874,7 +3874,7 @@
             tm_scope: "source.yaml",
             color: "#77d9fb",
             extensions: [".raml"],
-            language_id: 308
+            language_id: 308,
           },
           RDoc: {
             type: "prose",
@@ -3882,7 +3882,7 @@
             wrap: true,
             extensions: [".rdoc"],
             tm_scope: "text.rdoc",
-            language_id: 309
+            language_id: 309,
           },
           REALbasic: {
             type: "programming",
@@ -3892,11 +3892,11 @@
               ".rbmnu",
               ".rbres",
               ".rbtbar",
-              ".rbuistate"
+              ".rbuistate",
             ],
             tm_scope: "source.vbnet",
             ace_mode: "text",
-            language_id: 310
+            language_id: 310,
           },
           REXX: {
             type: "programming",
@@ -3905,7 +3905,7 @@
             interpreters: ["regina", "rexx"],
             tm_scope: "source.rexx",
             ace_mode: "text",
-            language_id: 311
+            language_id: 311,
           },
           RHTML: {
             type: "markup",
@@ -3916,7 +3916,7 @@
             ace_mode: "rhtml",
             codemirror_mode: "htmlembedded",
             codemirror_mime_type: "application/x-erb",
-            language_id: 312
+            language_id: 312,
           },
           RMarkdown: {
             type: "prose",
@@ -3926,7 +3926,7 @@
             codemirror_mime_type: "text/x-gfm",
             extensions: [".rmd"],
             tm_scope: "source.gfm",
-            language_id: 313
+            language_id: 313,
           },
           RPC: {
             type: "programming",
@@ -3934,7 +3934,7 @@
             ace_mode: "c_cpp",
             extensions: [".x"],
             tm_scope: "source.c",
-            language_id: 1031374237
+            language_id: 1031374237,
           },
           "RPM Spec": {
             type: "data",
@@ -3944,7 +3944,7 @@
             ace_mode: "text",
             codemirror_mode: "rpm",
             codemirror_mime_type: "text/x-rpm-spec",
-            language_id: 314
+            language_id: 314,
           },
           RUNOFF: {
             type: "markup",
@@ -3952,7 +3952,7 @@
             extensions: [".rnh", ".rno"],
             tm_scope: "text.runoff",
             ace_mode: "text",
-            language_id: 315
+            language_id: 315,
           },
           Racket: {
             type: "programming",
@@ -3961,7 +3961,7 @@
             interpreters: ["racket"],
             tm_scope: "source.racket",
             ace_mode: "lisp",
-            language_id: 316
+            language_id: 316,
           },
           Ragel: {
             type: "programming",
@@ -3970,7 +3970,7 @@
             aliases: ["ragel-rb", "ragel-ruby"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 317
+            language_id: 317,
           },
           Rascal: {
             type: "programming",
@@ -3978,7 +3978,7 @@
             extensions: [".rsc"],
             tm_scope: "source.rascal",
             ace_mode: "text",
-            language_id: 173616037
+            language_id: 173616037,
           },
           "Raw token data": {
             type: "data",
@@ -3986,7 +3986,7 @@
             extensions: [".raw"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 318
+            language_id: 318,
           },
           "Readline Config": {
             type: "data",
@@ -3995,7 +3995,7 @@
             filenames: [".inputrc", "inputrc"],
             tm_scope: "source.inputrc",
             ace_mode: "text",
-            language_id: 538732839
+            language_id: 538732839,
           },
           Reason: {
             type: "programming",
@@ -4006,7 +4006,7 @@
             extensions: [".re", ".rei"],
             interpreters: ["ocaml"],
             tm_scope: "source.reason",
-            language_id: 869538413
+            language_id: 869538413,
           },
           Rebol: {
             type: "programming",
@@ -4014,7 +4014,7 @@
             extensions: [".reb", ".r", ".r2", ".r3", ".rebol"],
             ace_mode: "text",
             tm_scope: "source.rebol",
-            language_id: 319
+            language_id: 319,
           },
           Red: {
             type: "programming",
@@ -4023,14 +4023,14 @@
             aliases: ["red/system"],
             tm_scope: "source.red",
             ace_mode: "text",
-            language_id: 320
+            language_id: 320,
           },
           Redcode: {
             type: "programming",
             extensions: [".cw"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 321
+            language_id: 321,
           },
           "Regular Expression": {
             type: "data",
@@ -4038,7 +4038,7 @@
             aliases: ["regexp", "regex"],
             ace_mode: "text",
             tm_scope: "source.regexp",
-            language_id: 363378884
+            language_id: 363378884,
           },
           "Ren'Py": {
             type: "programming",
@@ -4047,21 +4047,21 @@
             extensions: [".rpy"],
             tm_scope: "source.renpy",
             ace_mode: "python",
-            language_id: 322
+            language_id: 322,
           },
           RenderScript: {
             type: "programming",
             extensions: [".rs", ".rsh"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 323
+            language_id: 323,
           },
           "Rich Text Format": {
             type: "markup",
             extensions: [".rtf"],
             tm_scope: "text.rtf",
             ace_mode: "text",
-            language_id: 51601661
+            language_id: 51601661,
           },
           Ring: {
             type: "programming",
@@ -4069,7 +4069,7 @@
             extensions: [".ring"],
             tm_scope: "source.ring",
             ace_mode: "text",
-            language_id: 431
+            language_id: 431,
           },
           Riot: {
             type: "markup",
@@ -4077,14 +4077,14 @@
             ace_mode: "html",
             extensions: [".riot"],
             tm_scope: "text.html.riot",
-            language_id: 878396783
+            language_id: 878396783,
           },
           RobotFramework: {
             type: "programming",
             extensions: [".robot"],
             tm_scope: "text.robot",
             ace_mode: "text",
-            language_id: 324
+            language_id: 324,
           },
           Roff: {
             type: "markup",
@@ -4117,7 +4117,7 @@
               ".n",
               ".nr",
               ".rno",
-              ".tmac"
+              ".tmac",
             ],
             filenames: ["eqnrc", "mmn", "mmt", "troffrc", "troffrc-end"],
             tm_scope: "text.roff",
@@ -4129,12 +4129,12 @@
               "man-page",
               "mdoc",
               "nroff",
-              "troff"
+              "troff",
             ],
             ace_mode: "text",
             codemirror_mode: "troff",
             codemirror_mime_type: "text/troff",
-            language_id: 141
+            language_id: 141,
           },
           "Roff Manpage": {
             type: "markup",
@@ -4159,13 +4159,13 @@
               ".8",
               ".9",
               ".man",
-              ".mdoc"
+              ".mdoc",
             ],
             tm_scope: "text.roff",
             ace_mode: "text",
             codemirror_mode: "troff",
             codemirror_mime_type: "text/troff",
-            language_id: 612669833
+            language_id: 612669833,
           },
           Rouge: {
             type: "programming",
@@ -4175,7 +4175,7 @@
             color: "#cc0088",
             extensions: [".rg"],
             tm_scope: "source.clojure",
-            language_id: 325
+            language_id: 325,
           },
           Ruby: {
             type: "programming",
@@ -4206,7 +4206,7 @@
               ".ruby",
               ".spec",
               ".thor",
-              ".watchr"
+              ".watchr",
             ],
             interpreters: ["ruby", "macruby", "rake", "jruby", "rbx"],
             filenames: [
@@ -4231,9 +4231,9 @@
               "Snapfile",
               "Thorfile",
               "Vagrantfile",
-              "buildfile"
+              "buildfile",
             ],
-            language_id: 326
+            language_id: 326,
           },
           Rust: {
             type: "programming",
@@ -4243,7 +4243,7 @@
             ace_mode: "rust",
             codemirror_mode: "rust",
             codemirror_mime_type: "text/x-rustsrc",
-            language_id: 327
+            language_id: 327,
           },
           SAS: {
             type: "programming",
@@ -4253,7 +4253,7 @@
             ace_mode: "text",
             codemirror_mode: "sas",
             codemirror_mime_type: "text/x-sas",
-            language_id: 328
+            language_id: 328,
           },
           SCSS: {
             type: "markup",
@@ -4263,7 +4263,7 @@
             codemirror_mode: "css",
             codemirror_mime_type: "text/x-scss",
             extensions: [".scss"],
-            language_id: 329
+            language_id: 329,
           },
           SMT: {
             type: "programming",
@@ -4278,11 +4278,11 @@
               "stp",
               "verit",
               "yices2",
-              "z3"
+              "z3",
             ],
             tm_scope: "source.smt",
             ace_mode: "text",
-            language_id: 330
+            language_id: 330,
           },
           SPARQL: {
             type: "data",
@@ -4291,7 +4291,7 @@
             codemirror_mode: "sparql",
             codemirror_mime_type: "application/sparql-query",
             extensions: [".sparql", ".rq"],
-            language_id: 331
+            language_id: 331,
           },
           SQF: {
             type: "programming",
@@ -4299,7 +4299,7 @@
             extensions: [".sqf", ".hqf"],
             tm_scope: "source.sqf",
             ace_mode: "text",
-            language_id: 332
+            language_id: 332,
           },
           SQL: {
             type: "data",
@@ -4316,9 +4316,9 @@
               ".prc",
               ".tab",
               ".udf",
-              ".viw"
+              ".viw",
             ],
-            language_id: 333
+            language_id: 333,
           },
           SQLPL: {
             type: "programming",
@@ -4327,7 +4327,7 @@
             codemirror_mime_type: "text/x-sql",
             tm_scope: "source.sql",
             extensions: [".sql", ".db2"],
-            language_id: 334
+            language_id: 334,
           },
           "SRecode Template": {
             type: "markup",
@@ -4337,7 +4337,7 @@
             codemirror_mode: "commonlisp",
             codemirror_mime_type: "text/x-common-lisp",
             extensions: [".srt"],
-            language_id: 335
+            language_id: 335,
           },
           "SSH Config": {
             type: "data",
@@ -4348,11 +4348,11 @@
               "sshconfig",
               "sshconfig.snip",
               "sshd-config",
-              "sshd_config"
+              "sshd_config",
             ],
             ace_mode: "text",
             tm_scope: "source.ssh-config",
-            language_id: 554920715
+            language_id: 554920715,
           },
           STON: {
             type: "data",
@@ -4360,7 +4360,7 @@
             extensions: [".ston"],
             tm_scope: "source.smalltalk",
             ace_mode: "text",
-            language_id: 336
+            language_id: 336,
           },
           SVG: {
             type: "data",
@@ -4369,7 +4369,7 @@
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
-            language_id: 337
+            language_id: 337,
           },
           Sage: {
             type: "programming",
@@ -4379,7 +4379,7 @@
             ace_mode: "python",
             codemirror_mode: "python",
             codemirror_mime_type: "text/x-python",
-            language_id: 338
+            language_id: 338,
           },
           SaltStack: {
             type: "programming",
@@ -4390,7 +4390,7 @@
             ace_mode: "yaml",
             codemirror_mode: "yaml",
             codemirror_mime_type: "text/x-yaml",
-            language_id: 339
+            language_id: 339,
           },
           Sass: {
             type: "markup",
@@ -4400,7 +4400,7 @@
             ace_mode: "sass",
             codemirror_mode: "sass",
             codemirror_mime_type: "text/x-sass",
-            language_id: 340
+            language_id: 340,
           },
           Scala: {
             type: "programming",
@@ -4411,7 +4411,7 @@
             color: "#c22d40",
             extensions: [".scala", ".kojo", ".sbt", ".sc"],
             interpreters: ["scala"],
-            language_id: 341
+            language_id: 341,
           },
           Scaml: {
             group: "HTML",
@@ -4419,7 +4419,7 @@
             extensions: [".scaml"],
             tm_scope: "source.scaml",
             ace_mode: "text",
-            language_id: 342
+            language_id: 342,
           },
           Scheme: {
             type: "programming",
@@ -4432,20 +4432,20 @@
               "chicken",
               "csi",
               "gosh",
-              "r6rs"
+              "r6rs",
             ],
             tm_scope: "source.scheme",
             ace_mode: "scheme",
             codemirror_mode: "scheme",
             codemirror_mime_type: "text/x-scheme",
-            language_id: 343
+            language_id: 343,
           },
           Scilab: {
             type: "programming",
             extensions: [".sci", ".sce", ".tst"],
             tm_scope: "source.scilab",
             ace_mode: "text",
-            language_id: 344
+            language_id: 344,
           },
           Self: {
             type: "programming",
@@ -4453,14 +4453,14 @@
             extensions: [".self"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 345
+            language_id: 345,
           },
           ShaderLab: {
             type: "programming",
             extensions: [".shader"],
             ace_mode: "text",
             tm_scope: "source.shaderlab",
-            language_id: 664257356
+            language_id: 664257356,
           },
           Shell: {
             type: "programming",
@@ -4477,7 +4477,7 @@
               ".sh.in",
               ".tmux",
               ".tool",
-              ".zsh"
+              ".zsh",
             ],
             filenames: [
               ".bash_aliases",
@@ -4508,7 +4508,7 @@
               "zlogout",
               "zprofile",
               "zshenv",
-              "zshrc"
+              "zshrc",
             ],
             interpreters: [
               "ash",
@@ -4519,13 +4519,13 @@
               "pdksh",
               "rc",
               "sh",
-              "zsh"
+              "zsh",
             ],
             tm_scope: "source.shell",
             ace_mode: "sh",
             codemirror_mode: "shell",
             codemirror_mime_type: "text/x-sh",
-            language_id: 346
+            language_id: 346,
           },
           ShellSession: {
             type: "programming",
@@ -4535,7 +4535,7 @@
             ace_mode: "sh",
             codemirror_mode: "shell",
             codemirror_mime_type: "text/x-sh",
-            language_id: 347
+            language_id: 347,
           },
           Shen: {
             type: "programming",
@@ -4543,7 +4543,7 @@
             extensions: [".shen"],
             tm_scope: "source.shen",
             ace_mode: "text",
-            language_id: 348
+            language_id: 348,
           },
           Slash: {
             type: "programming",
@@ -4551,7 +4551,7 @@
             extensions: [".sl"],
             tm_scope: "text.html.slash",
             ace_mode: "text",
-            language_id: 349
+            language_id: 349,
           },
           Slice: {
             type: "programming",
@@ -4559,7 +4559,7 @@
             tm_scope: "source.slice",
             ace_mode: "text",
             extensions: [".ice"],
-            language_id: 894641667
+            language_id: 894641667,
           },
           Slim: {
             group: "HTML",
@@ -4569,7 +4569,7 @@
             ace_mode: "text",
             codemirror_mode: "slim",
             codemirror_mime_type: "text/x-slim",
-            language_id: 350
+            language_id: 350,
           },
           SmPL: {
             type: "programming",
@@ -4578,14 +4578,14 @@
             ace_mode: "text",
             tm_scope: "source.smpl",
             color: "#c94949",
-            language_id: 164123055
+            language_id: 164123055,
           },
           Smali: {
             type: "programming",
             extensions: [".smali"],
             ace_mode: "text",
             tm_scope: "source.smali",
-            language_id: 351
+            language_id: 351,
           },
           Smalltalk: {
             type: "programming",
@@ -4596,7 +4596,7 @@
             ace_mode: "text",
             codemirror_mode: "smalltalk",
             codemirror_mime_type: "text/x-stsrc",
-            language_id: 352
+            language_id: 352,
           },
           Smarty: {
             type: "programming",
@@ -4605,14 +4605,14 @@
             codemirror_mode: "smarty",
             codemirror_mime_type: "text/x-smarty",
             tm_scope: "text.html.smarty",
-            language_id: 353
+            language_id: 353,
           },
           Solidity: {
             type: "programming",
             color: "#AA6746",
             ace_mode: "text",
             tm_scope: "source.solidity",
-            language_id: 237469032
+            language_id: 237469032,
           },
           SourcePawn: {
             type: "programming",
@@ -4621,14 +4621,14 @@
             extensions: [".sp", ".inc"],
             tm_scope: "source.sourcepawn",
             ace_mode: "text",
-            language_id: 354
+            language_id: 354,
           },
           "Spline Font Database": {
             type: "data",
             extensions: [".sfd"],
             tm_scope: "text.sfd",
             ace_mode: "yaml",
-            language_id: 767169629
+            language_id: 767169629,
           },
           Squirrel: {
             type: "programming",
@@ -4638,7 +4638,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-c++src",
-            language_id: 355
+            language_id: 355,
           },
           Stan: {
             type: "programming",
@@ -4646,7 +4646,7 @@
             extensions: [".stan"],
             ace_mode: "text",
             tm_scope: "source.stan",
-            language_id: 356
+            language_id: 356,
           },
           "Standard ML": {
             type: "programming",
@@ -4657,7 +4657,7 @@
             ace_mode: "text",
             codemirror_mode: "mllike",
             codemirror_mime_type: "text/x-ocaml",
-            language_id: 357
+            language_id: 357,
           },
           Stata: {
             type: "programming",
@@ -4668,11 +4668,11 @@
               ".ihlp",
               ".mata",
               ".matah",
-              ".sthlp"
+              ".sthlp",
             ],
             tm_scope: "source.stata",
             ace_mode: "text",
-            language_id: 358
+            language_id: 358,
           },
           Stylus: {
             type: "markup",
@@ -4680,14 +4680,14 @@
             extensions: [".styl"],
             tm_scope: "source.stylus",
             ace_mode: "stylus",
-            language_id: 359
+            language_id: 359,
           },
           "SubRip Text": {
             type: "data",
             extensions: [".srt"],
             ace_mode: "text",
             tm_scope: "text.srt",
-            language_id: 360
+            language_id: 360,
           },
           SugarSS: {
             type: "markup",
@@ -4695,7 +4695,7 @@
             group: "CSS",
             extensions: [".sss"],
             ace_mode: "text",
-            language_id: 826404698
+            language_id: 826404698,
           },
           SuperCollider: {
             type: "programming",
@@ -4704,7 +4704,7 @@
             interpreters: ["sclang", "scsynth"],
             tm_scope: "source.supercollider",
             ace_mode: "text",
-            language_id: 361
+            language_id: 361,
           },
           Svelte: {
             type: "markup",
@@ -4714,7 +4714,7 @@
             codemirror_mode: "htmlmixed",
             codemirror_mime_type: "text/html",
             extensions: [".svelte"],
-            language_id: 928734530
+            language_id: 928734530,
           },
           Swift: {
             type: "programming",
@@ -4724,7 +4724,7 @@
             ace_mode: "text",
             codemirror_mode: "swift",
             codemirror_mime_type: "text/x-swift",
-            language_id: 362
+            language_id: 362,
           },
           SystemVerilog: {
             type: "programming",
@@ -4734,7 +4734,7 @@
             ace_mode: "verilog",
             codemirror_mode: "verilog",
             codemirror_mime_type: "text/x-systemverilog",
-            language_id: 363
+            language_id: 363,
           },
           "TI Program": {
             type: "programming",
@@ -4742,14 +4742,14 @@
             color: "#A0AA87",
             extensions: [".8xp", ".8xk", ".8xk.txt", ".8xp.txt"],
             language_id: 422,
-            tm_scope: "none"
+            tm_scope: "none",
           },
           TLA: {
             type: "programming",
             extensions: [".tla"],
             tm_scope: "source.tla",
             ace_mode: "text",
-            language_id: 364
+            language_id: 364,
           },
           TOML: {
             type: "data",
@@ -4759,14 +4759,14 @@
             ace_mode: "toml",
             codemirror_mode: "toml",
             codemirror_mime_type: "text/x-toml",
-            language_id: 365
+            language_id: 365,
           },
           TSQL: {
             type: "programming",
             extensions: [".sql"],
             ace_mode: "sql",
             tm_scope: "source.tsql",
-            language_id: 918334941
+            language_id: 918334941,
           },
           TSX: {
             type: "programming",
@@ -4776,14 +4776,14 @@
             ace_mode: "javascript",
             codemirror_mode: "jsx",
             codemirror_mime_type: "text/jsx",
-            language_id: 94901924
+            language_id: 94901924,
           },
           TXL: {
             type: "programming",
             extensions: [".txl"],
             tm_scope: "source.txl",
             ace_mode: "text",
-            language_id: 366
+            language_id: 366,
           },
           Tcl: {
             type: "programming",
@@ -4795,7 +4795,7 @@
             ace_mode: "tcl",
             codemirror_mode: "tcl",
             codemirror_mime_type: "text/x-tcl",
-            language_id: 367
+            language_id: 367,
           },
           Tcsh: {
             type: "programming",
@@ -4805,7 +4805,7 @@
             ace_mode: "sh",
             codemirror_mode: "shell",
             codemirror_mime_type: "text/x-sh",
-            language_id: 368
+            language_id: 368,
           },
           TeX: {
             type: "markup",
@@ -4830,16 +4830,16 @@
               ".mkiv",
               ".mkvi",
               ".sty",
-              ".toc"
+              ".toc",
             ],
-            language_id: 369
+            language_id: 369,
           },
           Tea: {
             type: "markup",
             extensions: [".tea"],
             tm_scope: "source.tea",
             ace_mode: "text",
-            language_id: 370
+            language_id: 370,
           },
           Terra: {
             type: "programming",
@@ -4850,7 +4850,7 @@
             codemirror_mode: "lua",
             codemirror_mime_type: "text/x-lua",
             interpreters: ["lua"],
-            language_id: 371
+            language_id: 371,
           },
           Texinfo: {
             type: "prose",
@@ -4859,7 +4859,7 @@
             ace_mode: "text",
             tm_scope: "text.texinfo",
             interpreters: ["makeinfo"],
-            language_id: 988020015
+            language_id: 988020015,
           },
           Text: {
             type: "prose",
@@ -4891,11 +4891,11 @@
               "readme.1st",
               "test.me",
               "use.mask",
-              "use.stable.mask"
+              "use.stable.mask",
             ],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 372
+            language_id: 372,
           },
           Textile: {
             type: "prose",
@@ -4905,14 +4905,14 @@
             wrap: true,
             extensions: [".textile"],
             tm_scope: "none",
-            language_id: 373
+            language_id: 373,
           },
           Thrift: {
             type: "programming",
             tm_scope: "source.thrift",
             extensions: [".thrift"],
             ace_mode: "text",
-            language_id: 374
+            language_id: 374,
           },
           Turing: {
             type: "programming",
@@ -4920,7 +4920,7 @@
             extensions: [".t", ".tu"],
             tm_scope: "source.turing",
             ace_mode: "text",
-            language_id: 375
+            language_id: 375,
           },
           Turtle: {
             type: "data",
@@ -4929,7 +4929,7 @@
             ace_mode: "text",
             codemirror_mode: "turtle",
             codemirror_mime_type: "text/turtle",
-            language_id: 376
+            language_id: 376,
           },
           Twig: {
             type: "markup",
@@ -4939,7 +4939,7 @@
             ace_mode: "twig",
             codemirror_mode: "twig",
             codemirror_mime_type: "text/x-twig",
-            language_id: 377
+            language_id: 377,
           },
           "Type Language": {
             type: "data",
@@ -4947,7 +4947,7 @@
             extensions: [".tl"],
             tm_scope: "source.tl",
             ace_mode: "text",
-            language_id: 632765617
+            language_id: 632765617,
           },
           TypeScript: {
             type: "programming",
@@ -4959,7 +4959,7 @@
             ace_mode: "typescript",
             codemirror_mode: "javascript",
             codemirror_mime_type: "application/typescript",
-            language_id: 378
+            language_id: 378,
           },
           "Unified Parallel C": {
             type: "programming",
@@ -4969,7 +4969,7 @@
             codemirror_mime_type: "text/x-csrc",
             extensions: [".upc"],
             tm_scope: "source.c",
-            language_id: 379
+            language_id: 379,
           },
           "Unity3D Asset": {
             type: "data",
@@ -4983,10 +4983,10 @@
               ".mat",
               ".meta",
               ".prefab",
-              ".unity"
+              ".unity",
             ],
             tm_scope: "source.yaml",
-            language_id: 380
+            language_id: 380,
           },
           "Unix Assembly": {
             type: "programming",
@@ -4994,7 +4994,7 @@
             extensions: [".s", ".ms"],
             tm_scope: "source.x86",
             ace_mode: "assembly_x86",
-            language_id: 120
+            language_id: 120,
           },
           Uno: {
             type: "programming",
@@ -5003,7 +5003,7 @@
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csharp",
             tm_scope: "source.cs",
-            language_id: 381
+            language_id: 381,
           },
           UnrealScript: {
             type: "programming",
@@ -5013,7 +5013,7 @@
             ace_mode: "java",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-java",
-            language_id: 382
+            language_id: 382,
           },
           UrWeb: {
             type: "programming",
@@ -5021,7 +5021,7 @@
             extensions: [".ur", ".urs"],
             tm_scope: "source.ur",
             ace_mode: "text",
-            language_id: 383
+            language_id: 383,
           },
           V: {
             type: "programming",
@@ -5032,7 +5032,7 @@
             ace_mode: "golang",
             codemirror_mode: "go",
             codemirror_mime_type: "text/x-go",
-            language_id: 603371597
+            language_id: 603371597,
           },
           VBA: {
             type: "programming",
@@ -5043,7 +5043,7 @@
             ace_mode: "text",
             codemirror_mode: "vb",
             codemirror_mime_type: "text/x-vb",
-            language_id: 399230729
+            language_id: 399230729,
           },
           VBScript: {
             type: "programming",
@@ -5053,7 +5053,7 @@
             ace_mode: "text",
             codemirror_mode: "vbscript",
             codemirror_mime_type: "text/vbscript",
-            language_id: 408016005
+            language_id: 408016005,
           },
           VCL: {
             type: "programming",
@@ -5061,7 +5061,7 @@
             extensions: [".vcl"],
             tm_scope: "source.varnish.vcl",
             ace_mode: "text",
-            language_id: 384
+            language_id: 384,
           },
           VHDL: {
             type: "programming",
@@ -5074,13 +5074,13 @@
               ".vho",
               ".vhs",
               ".vht",
-              ".vhw"
+              ".vhw",
             ],
             tm_scope: "source.vhdl",
             ace_mode: "vhdl",
             codemirror_mode: "vhdl",
             codemirror_mime_type: "text/x-vhdl",
-            language_id: 385
+            language_id: 385,
           },
           Vala: {
             type: "programming",
@@ -5088,7 +5088,7 @@
             extensions: [".vala", ".vapi"],
             tm_scope: "source.vala",
             ace_mode: "vala",
-            language_id: 386
+            language_id: 386,
           },
           Verilog: {
             type: "programming",
@@ -5098,7 +5098,7 @@
             ace_mode: "verilog",
             codemirror_mode: "verilog",
             codemirror_mime_type: "text/x-verilog",
-            language_id: 387
+            language_id: 387,
           },
           "Vim Snippet": {
             type: "markup",
@@ -5106,7 +5106,7 @@
             extensions: [".snip", ".snippet", ".snippets"],
             tm_scope: "source.vim-snippet",
             ace_mode: "text",
-            language_id: 81265970
+            language_id: 81265970,
           },
           "Vim script": {
             type: "programming",
@@ -5121,10 +5121,10 @@
               "_vimrc",
               "gvimrc",
               "nvimrc",
-              "vimrc"
+              "vimrc",
             ],
             ace_mode: "text",
-            language_id: 388
+            language_id: 388,
           },
           "Visual Basic .NET": {
             type: "programming",
@@ -5135,7 +5135,7 @@
             ace_mode: "text",
             codemirror_mode: "vb",
             codemirror_mime_type: "text/x-vb",
-            language_id: 389
+            language_id: 389,
           },
           Volt: {
             type: "programming",
@@ -5145,7 +5145,7 @@
             ace_mode: "d",
             codemirror_mode: "d",
             codemirror_mime_type: "text/x-d",
-            language_id: 390
+            language_id: 390,
           },
           Vue: {
             type: "markup",
@@ -5153,28 +5153,28 @@
             extensions: [".vue"],
             tm_scope: "text.html.vue",
             ace_mode: "html",
-            language_id: 391
+            language_id: 391,
           },
           "Wavefront Material": {
             type: "data",
             extensions: [".mtl"],
             tm_scope: "source.wavefront.mtl",
             ace_mode: "text",
-            language_id: 392
+            language_id: 392,
           },
           "Wavefront Object": {
             type: "data",
             extensions: [".obj"],
             tm_scope: "source.wavefront.obj",
             ace_mode: "text",
-            language_id: 393
+            language_id: 393,
           },
           "Web Ontology Language": {
             type: "data",
             extensions: [".owl"],
             tm_scope: "text.xml",
             ace_mode: "xml",
-            language_id: 394
+            language_id: 394,
           },
           WebAssembly: {
             type: "programming",
@@ -5185,7 +5185,7 @@
             ace_mode: "lisp",
             codemirror_mode: "commonlisp",
             codemirror_mime_type: "text/x-common-lisp",
-            language_id: 956556503
+            language_id: 956556503,
           },
           WebIDL: {
             type: "programming",
@@ -5194,7 +5194,7 @@
             ace_mode: "text",
             codemirror_mode: "webidl",
             codemirror_mime_type: "text/x-webidl",
-            language_id: 395
+            language_id: 395,
           },
           WebVTT: {
             type: "data",
@@ -5202,7 +5202,7 @@
             extensions: [".vtt"],
             tm_scope: "source.vtt",
             ace_mode: "text",
-            language_id: 658679714
+            language_id: 658679714,
           },
           "Wget Config": {
             type: "data",
@@ -5211,7 +5211,7 @@
             filenames: [".wgetrc"],
             tm_scope: "source.wgetrc",
             ace_mode: "text",
-            language_id: 668457123
+            language_id: 668457123,
           },
           "Windows Registry Entries": {
             type: "data",
@@ -5220,7 +5220,7 @@
             ace_mode: "ini",
             codemirror_mode: "properties",
             codemirror_mime_type: "text/x-properties",
-            language_id: 969674868
+            language_id: 969674868,
           },
           Wollok: {
             type: "programming",
@@ -5228,14 +5228,14 @@
             extensions: [".wlk"],
             ace_mode: "text",
             tm_scope: "source.wollok",
-            language_id: 632745969
+            language_id: 632745969,
           },
           "World of Warcraft Addon Data": {
             type: "data",
             extensions: [".toc"],
             tm_scope: "source.toc",
             ace_mode: "text",
-            language_id: 396
+            language_id: 396,
           },
           "X BitMap": {
             type: "data",
@@ -5246,7 +5246,7 @@
             tm_scope: "source.c",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csrc",
-            language_id: 782911107
+            language_id: 782911107,
           },
           "X Font Directory Index": {
             type: "data",
@@ -5254,11 +5254,11 @@
               "encodings.dir",
               "fonts.alias",
               "fonts.dir",
-              "fonts.scale"
+              "fonts.scale",
             ],
             tm_scope: "source.fontdir",
             ace_mode: "text",
-            language_id: 208700028
+            language_id: 208700028,
           },
           "X PixMap": {
             type: "data",
@@ -5269,7 +5269,7 @@
             tm_scope: "source.c",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csrc",
-            language_id: 781846279
+            language_id: 781846279,
           },
           X10: {
             type: "programming",
@@ -5278,7 +5278,7 @@
             extensions: [".x10"],
             color: "#4B6BEF",
             tm_scope: "source.x10",
-            language_id: 397
+            language_id: 397,
           },
           XC: {
             type: "programming",
@@ -5288,14 +5288,14 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csrc",
-            language_id: 398
+            language_id: 398,
           },
           XCompose: {
             type: "data",
             filenames: [".XCompose", "XCompose", "xcompose"],
             tm_scope: "config.xcompose",
             ace_mode: "text",
-            language_id: 225167241
+            language_id: 225167241,
           },
           XML: {
             type: "data",
@@ -5400,7 +5400,7 @@
               ".xsd",
               ".xspec",
               ".xul",
-              ".zcml"
+              ".zcml",
             ],
             filenames: [
               ".classpath",
@@ -5412,9 +5412,9 @@
               "Web.Debug.config",
               "Web.Release.config",
               "Web.config",
-              "packages.config"
+              "packages.config",
             ],
-            language_id: 399
+            language_id: 399,
           },
           "XML Property List": {
             type: "data",
@@ -5426,13 +5426,13 @@
               ".tmLanguage",
               ".tmPreferences",
               ".tmSnippet",
-              ".tmTheme"
+              ".tmTheme",
             ],
             tm_scope: "text.xml.plist",
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
-            language_id: 75622871
+            language_id: 75622871,
           },
           XPages: {
             type: "data",
@@ -5441,7 +5441,7 @@
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
-            language_id: 400
+            language_id: 400,
           },
           XProc: {
             type: "programming",
@@ -5450,7 +5450,7 @@
             ace_mode: "xml",
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
-            language_id: 401
+            language_id: 401,
           },
           XQuery: {
             type: "programming",
@@ -5460,7 +5460,7 @@
             codemirror_mode: "xquery",
             codemirror_mime_type: "application/xquery",
             tm_scope: "source.xq",
-            language_id: 402
+            language_id: 402,
           },
           XS: {
             type: "programming",
@@ -5469,7 +5469,7 @@
             ace_mode: "c_cpp",
             codemirror_mode: "clike",
             codemirror_mime_type: "text/x-csrc",
-            language_id: 403
+            language_id: 403,
           },
           XSLT: {
             type: "programming",
@@ -5480,7 +5480,7 @@
             codemirror_mode: "xml",
             codemirror_mime_type: "text/xml",
             color: "#EB8CEB",
-            language_id: 404
+            language_id: 404,
           },
           Xojo: {
             type: "programming",
@@ -5490,18 +5490,18 @@
               ".xojo_report",
               ".xojo_script",
               ".xojo_toolbar",
-              ".xojo_window"
+              ".xojo_window",
             ],
             tm_scope: "source.xojo",
             ace_mode: "text",
-            language_id: 405
+            language_id: 405,
           },
           Xtend: {
             type: "programming",
             extensions: [".xtend"],
             tm_scope: "source.xtend",
             ace_mode: "text",
-            language_id: 406
+            language_id: 406,
           },
           YAML: {
             type: "data",
@@ -5517,20 +5517,20 @@
               ".yaml",
               ".yaml-tmlanguage",
               ".yaml.sed",
-              ".yml.mysql"
+              ".yml.mysql",
             ],
             filenames: [".clang-format", ".clang-tidy", ".gemrc", "glide.lock"],
             ace_mode: "yaml",
             codemirror_mode: "yaml",
             codemirror_mime_type: "text/x-yaml",
-            language_id: 407
+            language_id: 407,
           },
           YANG: {
             type: "data",
             extensions: [".yang"],
             tm_scope: "source.yang",
             ace_mode: "text",
-            language_id: 408
+            language_id: 408,
           },
           YARA: {
             type: "programming",
@@ -5538,7 +5538,7 @@
             ace_mode: "text",
             extensions: [".yar", ".yara"],
             tm_scope: "source.yara",
-            language_id: 805122868
+            language_id: 805122868,
           },
           YASnippet: {
             type: "markup",
@@ -5547,7 +5547,7 @@
             extensions: [".yasnippet"],
             tm_scope: "source.yasnippet",
             ace_mode: "text",
-            language_id: 378760102
+            language_id: 378760102,
           },
           Yacc: {
             type: "programming",
@@ -5555,7 +5555,7 @@
             tm_scope: "source.yacc",
             ace_mode: "text",
             color: "#4B6C4B",
-            language_id: 409
+            language_id: 409,
           },
           ZAP: {
             type: "programming",
@@ -5563,7 +5563,7 @@
             extensions: [".zap", ".xzap"],
             tm_scope: "source.zap",
             ace_mode: "text",
-            language_id: 952972794
+            language_id: 952972794,
           },
           ZIL: {
             type: "programming",
@@ -5571,7 +5571,7 @@
             extensions: [".zil", ".mud"],
             tm_scope: "source.zil",
             ace_mode: "text",
-            language_id: 973483626
+            language_id: 973483626,
           },
           Zeek: {
             type: "programming",
@@ -5579,7 +5579,7 @@
             extensions: [".zeek", ".bro"],
             tm_scope: "source.zeek",
             ace_mode: "text",
-            language_id: 40
+            language_id: 40,
           },
           ZenScript: {
             type: "programming",
@@ -5587,7 +5587,7 @@
             extensions: [".zs"],
             tm_scope: "source.zenscript",
             ace_mode: "text",
-            language_id: 494938890
+            language_id: 494938890,
           },
           Zephir: {
             type: "programming",
@@ -5595,7 +5595,7 @@
             extensions: [".zep"],
             tm_scope: "source.php.zephir",
             ace_mode: "php",
-            language_id: 410
+            language_id: 410,
           },
           Zig: {
             type: "programming",
@@ -5603,14 +5603,14 @@
             extensions: [".zig"],
             tm_scope: "source.zig",
             ace_mode: "text",
-            language_id: 646424281
+            language_id: 646424281,
           },
           Zimpl: {
             type: "programming",
             extensions: [".zimpl", ".zmpl", ".zpl"],
             tm_scope: "none",
             ace_mode: "text",
-            language_id: 411
+            language_id: 411,
           },
           "cURL Config": {
             type: "data",
@@ -5619,14 +5619,14 @@
             filenames: [".curlrc", "_curlrc"],
             tm_scope: "source.curlrc",
             ace_mode: "text",
-            language_id: 992375436
+            language_id: 992375436,
           },
           desktop: {
             type: "data",
             extensions: [".desktop", ".desktop.in"],
             tm_scope: "source.desktop",
             ace_mode: "text",
-            language_id: 412
+            language_id: 412,
           },
           dircolors: {
             type: "data",
@@ -5637,11 +5637,11 @@
               "DIR_COLORS",
               "_dir_colors",
               "_dircolors",
-              "dir_colors"
+              "dir_colors",
             ],
             tm_scope: "source.dircolors",
             ace_mode: "text",
-            language_id: 691605112
+            language_id: 691605112,
           },
           eC: {
             type: "programming",
@@ -5649,7 +5649,7 @@
             extensions: [".ec", ".eh"],
             tm_scope: "source.c.ec",
             ace_mode: "text",
-            language_id: 413
+            language_id: 413,
           },
           edn: {
             type: "data",
@@ -5658,7 +5658,7 @@
             codemirror_mime_type: "text/x-clojure",
             extensions: [".edn"],
             tm_scope: "source.clojure",
-            language_id: 414
+            language_id: 414,
           },
           fish: {
             type: "programming",
@@ -5667,7 +5667,7 @@
             extensions: [".fish"],
             tm_scope: "source.fish",
             ace_mode: "text",
-            language_id: 415
+            language_id: 415,
           },
           "mIRC Script": {
             type: "programming",
@@ -5675,7 +5675,7 @@
             extensions: [".mrc"],
             tm_scope: "source.mrc",
             ace_mode: "text",
-            language_id: 517654727
+            language_id: 517654727,
           },
           mcfunction: {
             type: "programming",
@@ -5683,14 +5683,14 @@
             extensions: [".mcfunction"],
             tm_scope: "source.mcfunction",
             ace_mode: "text",
-            language_id: 462488745
+            language_id: 462488745,
           },
           mupad: {
             type: "programming",
             extensions: [".mu"],
             tm_scope: "source.mupad",
             ace_mode: "text",
-            language_id: 416
+            language_id: 416,
           },
           nanorc: {
             type: "data",
@@ -5699,7 +5699,7 @@
             filenames: [".nanorc", "nanorc"],
             tm_scope: "source.nanorc",
             ace_mode: "text",
-            language_id: 775996197
+            language_id: 775996197,
           },
           nesC: {
             type: "programming",
@@ -5707,7 +5707,7 @@
             extensions: [".nc"],
             ace_mode: "text",
             tm_scope: "source.nesc",
-            language_id: 417
+            language_id: 417,
           },
           ooc: {
             type: "programming",
@@ -5715,7 +5715,7 @@
             extensions: [".ooc"],
             tm_scope: "source.ooc",
             ace_mode: "text",
-            language_id: 418
+            language_id: 418,
           },
           q: {
             type: "programming",
@@ -5723,7 +5723,7 @@
             tm_scope: "source.q",
             ace_mode: "text",
             color: "#0040cd",
-            language_id: 970539067
+            language_id: 970539067,
           },
           reStructuredText: {
             type: "prose",
@@ -5734,7 +5734,7 @@
             ace_mode: "text",
             codemirror_mode: "rst",
             codemirror_mime_type: "text/x-rst",
-            language_id: 419
+            language_id: 419,
           },
           sed: {
             type: "programming",
@@ -5743,7 +5743,7 @@
             interpreters: ["gsed", "minised", "sed", "ssed"],
             ace_mode: "text",
             tm_scope: "source.sed",
-            language_id: 847830017
+            language_id: 847830017,
           },
           wdl: {
             type: "programming",
@@ -5751,7 +5751,7 @@
             extensions: [".wdl"],
             tm_scope: "source.wdl",
             ace_mode: "text",
-            language_id: 374521672
+            language_id: 374521672,
           },
           wisp: {
             type: "programming",
@@ -5761,7 +5761,7 @@
             color: "#7582D1",
             extensions: [".wisp"],
             tm_scope: "source.clojure",
-            language_id: 420
+            language_id: 420,
           },
           xBase: {
             type: "programming",
@@ -5770,8 +5770,8 @@
             extensions: [".prg", ".ch", ".prw"],
             tm_scope: "source.harbour",
             ace_mode: "text",
-            language_id: 421
-          }
+            language_id: 421,
+          },
         },
       };
     },
@@ -5790,13 +5790,13 @@
           9: "Sep",
           10: "Oct",
           11: "Nov",
-          12: "Dec"
+          12: "Dec",
         };
         let now = {
           year: nowTime.getFullYear(),
           month: nowTime.getMonth() + 1,
           date: nowTime.getDate(),
-          hour: nowTime.getHours()
+          hour: nowTime.getHours(),
         };
         let update = this.updateTime;
         if (update.year !== now.year) {
@@ -5810,8 +5810,9 @@
             (now.hour - update.hour) >
           48
         ) {
-          return `${(now.month - update.month) * 30 +
-            (now.date - update.date)} days ago`;
+          return `${
+            (now.month - update.month) * 30 + (now.date - update.date)
+          } days ago`;
         } else if (
           ((now.month - update.month) * 30 + (now.date - update.date)) * 24 +
             (now.hour - update.hour) >
@@ -5824,10 +5825,10 @@
       },
       updateTime() {
         let update = {
-          year: this.sliceTheDate(0,4),
-          month: this.sliceTheDate(5,7),
-          date: this.sliceTheDate(8,10),
-          hour: this.sliceTheDate(11,13)
+          year: this.sliceTheDate(0, 4),
+          month: this.sliceTheDate(5, 7),
+          date: this.sliceTheDate(8, 10),
+          hour: this.sliceTheDate(11, 13),
         };
         return update;
       },
@@ -5836,26 +5837,30 @@
           return false;
         }
         if (this.github_lang[this.repoData.language]) {
-          return this.github_lang[this.repoData.language].color
+          return this.github_lang[this.repoData.language].color;
         }
-        return '';
+        return "";
       },
-      hasPage(){
+      hasPage() {
         return this.repoData.has_pages;
       },
-      getUrl(){
-        if(this.hasPage){
-          if(this.repoData.name === this.repoData.owner.login+'.github.io')
-            return 'https://'+ this.repoData.owner.login +'.github.io/'
+      getUrl() {
+        if (this.hasPage) {
+          if (this.repoData.name === this.repoData.owner.login + ".github.io")
+            return "https://" + this.repoData.owner.login + ".github.io/";
           else
-            return 'https://'+ this.repoData.owner.login +'.github.io/' + this.repoData.name 
-        }
-        else return 'javascript:;'
-      }
+            return (
+              "https://" +
+              this.repoData.owner.login +
+              ".github.io/" +
+              this.repoData.name
+            );
+        } else return "javascript:;";
+      },
     },
     methods: {
-      openHandler(){
-        this.$emit('changeopen',this.index)
+      openHandler() {
+        this.$emit("changeopen", this.index);
       },
       CopyTextToClipboard(id) {
         var TextRange = document.createRange();
@@ -5865,15 +5870,14 @@
         sel.addRange(TextRange);
         document.execCommand("copy");
       },
-      sliceTheDate(scope1,scope2){
-        if(this.repoData.pushed_at){
-          return parseInt(this.repoData.pushed_at.slice(scope1, scope2))
+      sliceTheDate(scope1, scope2) {
+        if (this.repoData.pushed_at) {
+          return parseInt(this.repoData.pushed_at.slice(scope1, scope2));
+        } else {
+          return parseInt(this.repoData.updated_at.slice(scope1, scope2));
         }
-        else{
-          return parseInt(this.repoData.updated_at.slice(scope1, scope2))
-        }
-      }
-    }
+      },
+    },
   });
 
   new Vue({
@@ -5884,19 +5888,22 @@
       userData: [],
       repoData: [],
       searched: [],
+      limitData: [],
+      limitIndex: 0,
+      reachBottom: false,
       userExistence: true,
       inputWidth: false,
       nowUserName: "",
       burgerClick: false,
       open_more: [],
-      nowHistory: null
+      nowHistory: null,
     },
     computed: {
       dataTime() {
         let list = [];
         for (let i = 0; i < this.repoData.length; i++) {
           let parseTime = this.repoData[i].pushed_at;
-          if(!parseTime) parseTime = this.repoData[i].updated_at;
+          if (!parseTime) parseTime = this.repoData[i].updated_at;
           let obj = { index: i, time: parseTime };
           list.push(obj);
         }
@@ -5905,10 +5912,10 @@
       },
       timeRearrange() {
         let copyData = JSON.parse(JSON.stringify(this.dataTime));
-        copyData = copyData.map(e => {
+        copyData = copyData.map((e) => {
           return { index: e.index, time: this.parseISOString(e.time) };
         });
-        copyData.sort(function(o1, o2) {
+        copyData.sort(function (o1, o2) {
           return o1.time > o2.time ? -1 : o1.time < o2.time ? 1 : 0;
         });
         return copyData;
@@ -5919,117 +5926,136 @@
           data.push(this.repoData[this.timeRearrange[i].index]);
         }
         return data;
-      }                                                             
+      },
     },
     methods: {
       addToSearched() {
         let totalCount = 5;
-        if (this.searched.indexOf(this.username.toLowerCase())=== -1) {
+        if (this.searched.indexOf(this.username.toLowerCase()) === -1) {
           this.searched.unshift(this.username.toLowerCase());
-        }
-        else{
-          let index = this.searched.indexOf(this.username.toLowerCase())
-          this.searched.splice(index,1);
+        } else {
+          let index = this.searched.indexOf(this.username.toLowerCase());
+          this.searched.splice(index, 1);
           this.searched.unshift(this.username.toLowerCase());
         }
         if (this.searched.length > totalCount) {
           this.searched.pop();
         }
       },
-      getName() {
+      async getName() {
         this.loading = false;
         this.nowHistory = null;
-        axios
-          .get(`https://api.github.com/users/${this.username}`)
-          .then(res => {
-            this.addToSearched();
-            this.userData = res.data;
-            // console.log(res.data);
-            this.getRepos();
-          })
-          .catch(err => {
-            this.userData = [];
-            this.repoData = [];
-            this.userExistence = false;
-            this.loading = true;
-            this.nowUserName = this.username;
-          });
+        this.limitData.splice(0,this.limitData.length)
+        this.limitIndex = 0;
+        try {
+          let res = await axios.get(
+            `https://api.github.com/users/${this.username}`
+          );
+          this.addToSearched();
+          this.userData = res.data;
+          // console.log(res.data);
+          this.getRepos();
+        } catch (error) {
+          this.userData = [];
+          this.repoData = [];
+          this.userExistence = false;
+          this.loading = true;
+          this.nowUserName = this.username;
+        }
       },
-      getRepos() {
-        axios
-          .get(`https://api.github.com/users/${this.username}/repos`)
-          .then(res => {
-            // console.log(res.data);
-            this.repoData = res.data;
-            this.userExistence = true;
-            this.loading = true;
-            this.nowUserName = this.username;
-            this.getOpenMore();
-          })
-          .catch(err => {});
+      async getRepos() {
+        try {
+          let res = await axios.get(
+            `https://api.github.com/users/${this.username}/repos`,{params:{sort:'updated'}}
+          );
+          this.repoData = [...res.data];
+          this.userExistence = true;
+          this.loading = true;
+          this.nowUserName = this.username;
+          this.getOpenMore();
+          this.appendLimitData();
+        } catch (err) {
+        }
       },
       //iso時間(string)轉(date)
       parseISOString(s) {
         var b = s.split(/\D+/);
         return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
       },
-      getOpenMore(){
-        this.open_more = []
+      getOpenMore() {
+        this.open_more = [];
         let i = 0;
-        while(i<this.repoData.length){
-          this.open_more.push(false)
+        while (i < this.repoData.length) {
+          this.open_more.push(false);
           i++;
         }
       },
-      closeMore(){
-        this.open_more = this.open_more.map(e=>{
-          return e = false;
-        })
+      closeMore() {
+        this.open_more = this.open_more.map((e) => {
+          return (e = false);
+        });
       },
-      openMoreHandler(index){
+      openMoreHandler(index) {
         this.closeMore();
-        this.$set(this.open_more,index,true);
+        this.$set(this.open_more, index, true);
         // this.open_more[index] = true;
       },
-      deleteNameHandler(num){
-        this.searched.splice(num,1);
+      deleteNameHandler(num) {
+        this.searched.splice(num, 1);
       },
-      historyIndexHandler(num){
-        if(num<0){
+      historyIndexHandler(num) {
+        if (num < 0) {
           this.historyUp();
-        } 
-        else{
+        } else {
           this.historyDown();
         }
       },
-      historyUp(){
-        if(this.nowHistory>0){
-          this.nowHistory -=1;           
-          this.username = this.searched[this.nowHistory];                                                                    
+      historyUp() {
+        if (this.nowHistory > 0) {
+          this.nowHistory -= 1;
+          this.username = this.searched[this.nowHistory];
         }
       },
-      historyDown(){
-        if(this.nowHistory === null){
-          this.nowHistory = 0;                                                                                                                                                         
-        }
-        else if(this.nowHistory<this.searched.length-1){
-          this.nowHistory +=1;
+      historyDown() {
+        if (this.nowHistory === null) {
+          this.nowHistory = 0;
+        } else if (this.nowHistory < this.searched.length - 1) {
+          this.nowHistory += 1;
         }
         this.username = this.searched[this.nowHistory];
+      },
+      appendLimitData() {
+        let limit = 5;
+        for (let i = this.limitIndex; i < this.limitIndex + limit; i++) {
+          if(this.dataRearrange[i]){
+            this.limitData.push(this.dataRearrange[i]);
+          }
+        }
+        this.limitIndex += limit;
+        this.reachBottom = false;
+      },
+      infiniteScroll(){
+        window.addEventListener('scroll',()=>{
+          this.reachBottom = true;
+          let height = document.documentElement.scrollHeight -150; //總高度
+          let windowH = window.innerHeight; //視窗高度
+          let nowH = window.scrollY // 現在高度
+          if(nowH + windowH >= height && this.reachBottom){
+            this.appendLimitData();
+          }
+        })
       }
     },
     beforeMount() {
       this.getName();
+      this.infiniteScroll();
     },
     watch: {
       searched() {},
       // userData() {},
       // repoData() {},
       inputWidth() {},
-      nowHistory(){}
-    }
+      nowHistory() {},
+    },
   });
-})()
-
-
-
+})();
